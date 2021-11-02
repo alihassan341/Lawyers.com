@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="lawyersModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Admins">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Full Name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="username" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Appointments">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Phone" Type="int" Nullable="false" />
+          <Property Name="Date" Type="date" Nullable="false" />
+          <Property Name="Issue" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Status" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Lid" Type="int" Nullable="false" />
+          <Property Name="Cid" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="client">
+          <Key>
+            <PropertyRef Name="Cid" />
+          </Key>
+          <Property Name="Cid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="First Name" Type="varchar" MaxLength="50" />
+          <Property Name="Last Name" Type="varchar" MaxLength="50" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" />
+          <Property Name="Number" Type="nvarchar" MaxLength="50" />
+          <Property Name="Addess" Type="varchar" MaxLength="50" />
+          <Property Name="Password" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="lawyer">
+          <Key>
+            <PropertyRef Name="Lid" />
+          </Key>
+          <Property Name="Lid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="First Name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Last Name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Address" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Number" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Profile">
+          <Key>
+            <PropertyRef Name="Profile ID" />
+          </Key>
+          <Property Name="Profile ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Pic path" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Experince" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Specialiized_In" Type="varchar" MaxLength="50" />
+          <Property Name="Total_Cases" Type="varchar" MaxLength="50" />
+          <Property Name="Description" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <Association Name="FK_Appointments_client">
+          <End Role="client" Type="Self.client" Multiplicity="1" />
+          <End Role="Appointments" Type="Self.Appointments" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="client">
+              <PropertyRef Name="Cid" />
+            </Principal>
+            <Dependent Role="Appointments">
+              <PropertyRef Name="Cid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Appointments_lawyer">
+          <End Role="lawyer" Type="Self.lawyer" Multiplicity="1" />
+          <End Role="Appointments" Type="Self.Appointments" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="lawyer">
+              <PropertyRef Name="Lid" />
+            </Principal>
+            <Dependent Role="Appointments">
+              <PropertyRef Name="Lid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="lawyersModelStoreContainer">
+          <EntitySet Name="Admins" EntityType="Self.Admins" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Appointments" EntityType="Self.Appointments" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="client" EntityType="Self.client" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="lawyer" EntityType="Self.lawyer" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Profile" EntityType="Self.Profile" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Appointments_client" Association="Self.FK_Appointments_client">
+            <End Role="client" EntitySet="client" />
+            <End Role="Appointments" EntitySet="Appointments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Appointments_lawyer" Association="Self.FK_Appointments_lawyer">
+            <End Role="lawyer" EntitySet="lawyer" />
+            <End Role="Appointments" EntitySet="Appointments" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="lawyersModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Admin">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Full_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Appointment">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Phone" Type="Int32" Nullable="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Issue" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Lid" Type="Int32" Nullable="false" />
+          <Property Name="Cid" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="client" Relationship="Self.FK_Appointments_client" FromRole="Appointments" ToRole="client" />
+          <NavigationProperty Name="lawyer" Relationship="Self.FK_Appointments_lawyer" FromRole="Appointments" ToRole="lawyer" />
+        </EntityType>
+        <EntityType Name="client">
+          <Key>
+            <PropertyRef Name="Cid" />
+          </Key>
+          <Property Name="Cid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="First_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Last_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Addess" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Appointments" Relationship="Self.FK_Appointments_client" FromRole="client" ToRole="Appointments" />
+        </EntityType>
+        <EntityType Name="lawyer">
+          <Key>
+            <PropertyRef Name="Lid" />
+          </Key>
+          <Property Name="Lid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="First_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Last_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Address" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Appointments" Relationship="Self.FK_Appointments_lawyer" FromRole="lawyer" ToRole="Appointments" />
+        </EntityType>
+        <EntityType Name="Profile">
+          <Key>
+            <PropertyRef Name="Profile_ID" />
+          </Key>
+          <Property Name="Profile_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Pic_path" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Experince" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Specialiized_In" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Total_Cases" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Description" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <Association Name="FK_Appointments_client">
+          <End Role="client" Type="Self.client" Multiplicity="1" />
+          <End Role="Appointments" Type="Self.Appointment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="client">
+              <PropertyRef Name="Cid" />
+            </Principal>
+            <Dependent Role="Appointments">
+              <PropertyRef Name="Cid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Appointments_lawyer">
+          <End Role="lawyer" Type="Self.lawyer" Multiplicity="1" />
+          <End Role="Appointments" Type="Self.Appointment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="lawyer">
+              <PropertyRef Name="Lid" />
+            </Principal>
+            <Dependent Role="Appointments">
+              <PropertyRef Name="Lid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="lawyersEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Admins" EntityType="Self.Admin" />
+          <EntitySet Name="Appointments" EntityType="Self.Appointment" />
+          <EntitySet Name="clients" EntityType="Self.client" />
+          <EntitySet Name="lawyers" EntityType="Self.lawyer" />
+          <EntitySet Name="Profiles" EntityType="Self.Profile" />
+          <AssociationSet Name="FK_Appointments_client" Association="Self.FK_Appointments_client">
+            <End Role="client" EntitySet="clients" />
+            <End Role="Appointments" EntitySet="Appointments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Appointments_lawyer" Association="Self.FK_Appointments_lawyer">
+            <End Role="lawyer" EntitySet="lawyers" />
+            <End Role="Appointments" EntitySet="Appointments" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="lawyersModelStoreContainer" CdmEntityContainer="lawyersEntities">
+          <EntitySetMapping Name="Admins">
+            <EntityTypeMapping TypeName="lawyersModel.Admin">
+              <MappingFragment StoreEntitySet="Admins">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="Full_Name" ColumnName="Full Name" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="username" ColumnName="username" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Appointments">
+            <EntityTypeMapping TypeName="lawyersModel.Appointment">
+              <MappingFragment StoreEntitySet="Appointments">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Issue" ColumnName="Issue" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Lid" ColumnName="Lid" />
+                <ScalarProperty Name="Cid" ColumnName="Cid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="clients">
+            <EntityTypeMapping TypeName="lawyersModel.client">
+              <MappingFragment StoreEntitySet="client">
+                <ScalarProperty Name="Cid" ColumnName="Cid" />
+                <ScalarProperty Name="First_Name" ColumnName="First Name" />
+                <ScalarProperty Name="Last_Name" ColumnName="Last Name" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Number" ColumnName="Number" />
+                <ScalarProperty Name="Addess" ColumnName="Addess" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="lawyers">
+            <EntityTypeMapping TypeName="lawyersModel.lawyer">
+              <MappingFragment StoreEntitySet="lawyer">
+                <ScalarProperty Name="Lid" ColumnName="Lid" />
+                <ScalarProperty Name="First_Name" ColumnName="First Name" />
+                <ScalarProperty Name="Last_Name" ColumnName="Last Name" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Number" ColumnName="Number" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Profiles">
+            <EntityTypeMapping TypeName="lawyersModel.Profile">
+              <MappingFragment StoreEntitySet="Profile">
+                <ScalarProperty Name="Profile_ID" ColumnName="Profile ID" />
+                <ScalarProperty Name="Pic_path" ColumnName="Pic path" />
+                <ScalarProperty Name="Experince" ColumnName="Experince" />
+                <ScalarProperty Name="Specialiized_In" ColumnName="Specialiized_In" />
+                <ScalarProperty Name="Total_Cases" ColumnName="Total_Cases" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

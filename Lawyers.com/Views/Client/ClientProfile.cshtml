@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "ClientProfile";
+}
+
+<h2>ClientProfile</h2>
+
+@Html.Raw(TempData["LoginSuccessmassage"])
+
+<h2>WellCome  @Session["Email"]</h2>
+
+
+<h4>@Html.ActionLink("logout", "logout")</h4>
+

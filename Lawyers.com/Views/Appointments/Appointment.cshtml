@@ -1,0 +1,174 @@
+﻿
+@{
+    ViewBag.Title = "Appointment";
+}
+
+<link href="~/Content/css/Style.css" rel="stylesheet" />
+@Html.Raw(TempData["Appoinmentmsg"])
+@Html.Raw(TempData["Appoinmentrong"])
+<style>
+    body {
+        background-color: #fff;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .form-control {
+        font-size: 16px;
+        transition: all 0.4s;
+        box-shadow: none;
+    }
+
+        .form-control:focus {
+            border-color: #c18e3c;
+        }
+
+    .form-control, .btn {
+        border-radius: 50px;
+        outline: none;
+    }
+
+    .signin-form {
+        width: 400px;
+        margin: 0 auto;
+        padding: 0px;
+        margin-top: 15px;
+    }
+
+        .signin-form form {
+            border-radius: 5px;
+            margin-bottom: 0px;
+            background: #c18e3c;
+            padding: 40px;
+            padding-top: 20px;
+        }
+
+        .signin-form a {
+            color: #5c85cc;
+        }
+
+        .signin-form h2 {
+            text-align: center;
+            font-size: 34px;
+            margin-top: 0px;
+            color: #fff;
+        }
+
+        .signin-form .hint-text {
+            color: #999;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .signin-form .form-group {
+            margin-bottom: 20px;
+        }
+
+        .signin-form .btn {
+            background: #fff;
+            color: #c18e3c;
+            font-size: 18px;
+            line-height: 26px;
+            font-weight: bold;
+            text-align: center;
+            margin-left: 35px;
+        }
+
+        .signin-form .small {
+            font-size: 13px;
+        }
+
+    .signup-btn {
+        text-align: center;
+        border: #c18e3c;
+        transition: all 0.4s;
+        outline: none;
+    }
+
+    .or-seperator {
+        margin: 50px 0 15px;
+        text-align: center;
+        border-top: 1px solid #e0e0e0;
+    }
+
+        .or-seperator b {
+            padding: 0 10px;
+            width: 40px;
+            height: 40px;
+            font-size: 16px;
+            text-align: center;
+            line-height: 40px;
+            background: #fff;
+            display: inline-block;
+            border: 1px solid #e0e0e0;
+            border-radius: 50%;
+            position: relative;
+            top: -22px;
+            z-index: 1;
+        }
+
+    .social-btn .btn {
+        color: #fff;
+        margin: 10px 0 0 30px;
+        font-size: 15px;
+        width: 55px;
+        height: 55px;
+        line-height: 38px;
+        border-radius: 50%;
+        font-weight: normal;
+        text-align: center;
+        border: none;
+        transition: all 0.4s;
+    }
+
+        .social-btn .btn:first-child {
+            margin-left: 0;
+        }
+
+        .social-btn .btn:hover {
+            opacity: 0.8;
+        }
+
+    .social-btn .btn-primary {
+        background: #507cc0;
+    }
+
+    .social-btn .btn-info {
+        background: #64ccf1;
+    }
+
+    .social-btn .btn-danger {
+        background: #df4930;
+    }
+
+    .social-btn .btn i {
+        font-size: 20px;
+    }
+</style>
+<div class="signin-form">
+    <form ST">
+        <h2 stylepx;>APPOINTMENT BOOK</h2>
+
+        <div class="form-group">
+            <input class="form-control input-lg" type="text" name="Name" placeholder="Your Name">
+        </div>
+        <div class="form-group">
+            <input class="form-control input-lg" type="email" name="Email" placeholder="Your Email">
+        </div>
+        <div class="form-group">
+            <input class="form-control input-lg" type="number" name="PhoneNo" placeholder="Your Phone">
+        </div>
+        <div class="form-group">
+            <input class="form-control input-lg" type="Date" name="Date" placeholder="">
+        </div>
+        <div class="form-group">
+            <textarea name="Issue" placeholder="Explain Your Issue " id="" class="form-control input-lg"></textarea>
+        </div>
+        @*<div class="form-group">
+                <input name="status" value="Pending" type="hidden">
+            </div>
+            <input type="hidden" name="LawyerId" value="{{"$Profiles->id"}}">
+            <input type="hidden" name="ClientId" value="{{Session('tid')}}">*@
+
+        <button class="btn  btn-lg btn-block signup-btn" type="submit">APPOINTMENT BOOK</button>
+    </form>
+</div>
