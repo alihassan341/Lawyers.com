@@ -1,0 +1,101 @@
+﻿@model IEnumerable<Lawyers.com.Models.Appointment>
+
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>AppointmentShow</title>
+    <style>
+        th {
+            padding: 20px
+        }
+
+        .btn a:nth-child(1) {
+            background: #c18e3c;
+            color: white;
+            padding: 20px;
+            text-decoration: none
+        }
+
+        .btn1 a:nth-child(1) {
+            background: white;
+            border: 1px solid #c18e3c;
+            color: #c18e3c;
+            padding: 20px;
+            text-decoration: none;
+            display: block
+        }
+    </style>
+</head>
+
+<body>
+
+    <H1>Latest Appointments</H1>
+    <table style="padding:20px;margin-left:50px;">
+        <tr style="background: #c18e3c;color:white">
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Phone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Issue)
+            </th>
+            <th>
+                Lawyer Name
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th>Approved</th>
+            <th>Cancelled</th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr style="border: 1px solid;padding:10px;text-align:center">
+                <td style="border: 1px solid;padding:10px">
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td style="border: 1px solid;padding:10px">
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td style="border: 1px solid;padding:10px">
+                    @Html.DisplayFor(modelItem => item.Phone)
+                </td>
+                <td style="border: 1px solid;padding:10px">
+                    @Html.DisplayFor(modelItem => item.Date)
+                </td>
+                <td style="border: 1px solid;padding:10px">
+                    @Html.DisplayFor(modelItem => item.Issue)
+                </td>
+                <td style="border: 1px solid;padding:10px">
+                    @Html.DisplayFor(modelItem => item.lawyer.First_Name)
+                    @Html.DisplayFor(modelItem => item.lawyer.Last_Name)
+                </td>
+                <td style="border: 1px solid;padding:10px">
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+                <td class="btn">
+                    @Html.ActionLink("Approved", "Edit", new { id = item.id })
+                  <td>
+                      <td class="btn">
+                    @Html.ActionLink("Cancelled", "Delete", new { id = item.id })
+                </td>
+            </tr>
+        }
+
+    </table>
+</body>
+</html>

@@ -12,43 +12,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
     <link href="~/Content/css/font-awesome.min.css" rel="stylesheet" />
     <link href="~/Content/css/ionicons.min.css" rel="stylesheet" />
-
     <link href="~/Content/css/Style.css" rel="stylesheet" />
-</head>
-<style>
-    .dropbtn {
-        font-size: 30px;
-        border: none;
-        color: white;
-    }
-
-    .dropdown {
-        position: relative;
-        display: inline-block;
-        margin-right: 10%;
-        margin-left: 10%;
-    }
-
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        min-width: 150px;
-    }
-
-        .dropdown-content a {
-            padding-bottom: 10px;
-            font-size: 15px;
-            text-decoration: none;
-            display: block;
-            color: #ffff;
+    <style>
+        .dropbtn {
+            font-size: 30px;
+            border: none;
+            color: white;
         }
 
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-</style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin-right: 10%;
+            margin-left: 10%;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            min-width: 150px;
+        }
+
+            .dropdown-content a {
+                padding-bottom: 10px;
+                font-size: 15px;
+                text-decoration: none;
+                display: block;
+                color: #ffff;
+            }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
 <body>
-    <div class="pt-3 pb-5 top-wrap" style="margin-top: 150px;">
+    <div class="pt-3 pb-5 top-wrap" style="margin-top: ;">
         <div class="container-xl">
             <div class="row d-flex align-items-end">
                 <div class="col-md-2 d-flex mb-2 mb-md-0 order-md-2">
@@ -100,14 +99,12 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" href="index-2.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="atty.html">Attorneys</a></li>
-                    <li class="nav-item"><a class="nav-link" href="practice-areas.html">Practice Areas</a></li>
-
-                    <li class="nav-item"><a class="nav-link" href="cases.html">Cases</a></li>
-                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/Home/Index">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Home/About">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Client/lawyersPage">Lawyers</a></li>
+                                    
+                    <li class="nav-item"><a class="nav-link" href="/Home/News">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Home/Contact">Contact</a></li>
                 </ul>
                 <form action="#" class="search-container">
                     <div class="search-icon-btn">
@@ -127,7 +124,7 @@
                 <div class="col-md-6 col-lg">
                     <div class="ftco-footer-widget mb-4">
                         <h2 class="ftco-heading-2 logo d-flex">
-                            <a class="navbar-brand align-items-center" href="index-2.html">
+                            <a class="navbar-brand align-items-center" href="#">
                                 <span class="flaticon flaticon-law"></span>
                                 <span class="">Atorni <small>Lawfirm Agency</small></span>
                             </a>
@@ -144,7 +141,7 @@
                     <div class="ftco-footer-widget mb-4">
                         <h2 class="ftco-heading-2">Recent Posts</h2>
                         <div class="block-21 mb-4 d-flex">
-                            <a class="img mr-4 rounded" style="background-image: url(images/image_1.jpg);"></a>
+                            <a class="img mr-4 rounded" style="background-image: url(../../Content/images/image_1.jpg);"></a>
                             <div class="text">
                                 <h3 class="heading"><a href="#">Main practice areas of the firm include admiralty</a></h3>
                                 <div class="meta">
@@ -155,7 +152,7 @@
                             </div>
                         </div>
                         <div class="block-21 mb-4 d-flex">
-                            <a class="img mr-4 rounded" style="background-image: url(images/image_2.jpg);"></a>
+                            <a class="img mr-4 rounded" style="background-image: url(../../Content/images/image_2.jpg);"></a>
                             <div class="text">
                                 <h3 class="heading"><a href="#">Main practice areas of the firm include admiralty</a></h3>
                                 <div class="meta">

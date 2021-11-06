@@ -13,6 +13,20 @@ namespace Lawyers.com.Controllers
             return View();
         }
 
+        public ActionResult About
+            ()
+        {
+            return View();
+        }
+
+        public ActionResult News()
+        {
+            return View();
+        }
+        public ActionResult Contact()
+        {
+            return View();
+        }
        
     }
 }

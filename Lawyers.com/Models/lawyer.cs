@@ -20,23 +20,23 @@ namespace Lawyers.com.Models
         {
             this.Appointments = new HashSet<Appointment>();
         }
-        [Key]
+    
         public int Lid { get; set; }
-        [Required(ErrorMessage = "First Name is required")]
+        [Required(ErrorMessage = "First_Name is required")]
         [DataType(DataType.Text)]
-        [Display(Name = "First Name")]
+        [Display(Name = "Name")]
         public string First_Name { get; set; }
-        [Required(ErrorMessage = "Last  Name is required")]
+        [Required(ErrorMessage = "Last_Name is required")]
         [DataType(DataType.Text)]
-        [Display(Name = "Last Name")]
+        [Display(Name = "Name")]
         public string Last_Name { get; set; }
         [DataType(DataType.EmailAddress)]
         [Required(ErrorMessage = "Please enter Email ID")]
         [RegularExpression(@"^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$", ErrorMessage = "Email is not valid.")]
         public string Email { get; set; }
-        [Required(ErrorMessage = "Addess is required")]
+        [Required(ErrorMessage = "Address is required")]
         [DataType(DataType.Text)]
-        [Display(Name = "Addess")]
+        [Display(Name = "Address")]
         public string Address { get; set; }
         [Required(ErrorMessage = "PhoneNumber is required")]
         [DataType(DataType.PhoneNumber)]
@@ -48,8 +48,8 @@ namespace Lawyers.com.Models
         public string Password { get; set; }
         [Required(ErrorMessage = "ConfirmPassword is required")]
         [DataType(DataType.Password)]
-        [Display(Name = "ConfirmPassword")]
-        [Compare("Password", ErrorMessage = "ConfirmPassword dost not match")]
+        [Display(Name = "Password")]
+        [Compare("Password",ErrorMessage ="Password And ConfirmPassword dost not match")]
         public string ConfirmPassword { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

@@ -129,6 +129,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\Appointments1Controller.cs" />
     <Compile Include="Controllers\AppointmentsController.cs" />
     <Compile Include="Controllers\ClientsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -274,13 +275,21 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Appointments\Appointment.cshtml" />
     <Content Include="Views\Lawyer\Register.cshtml" />
     <Content Include="Views\Lawyer\login.cshtml" />
     <Content Include="Views\Lawyer\LawyerProfile.cshtml" />
     <Content Include="Views\Client\Register.cshtml" />
     <Content Include="Views\Client\Login.cshtml" />
     <Content Include="Views\Client\ClientProfile.cshtml" />
+    <Content Include="Views\Home\News.cshtml" />
+    <Content Include="Views\Client\lawyersPage.cshtml" />
+    <Content Include="Views\Appointments\Appointment.cshtml" />
+    <Content Include="Views\Appointments\Delete.cshtml" />
+    <Content Include="Views\Appointments\Edit.cshtml" />
+    <Content Include="Views\Appointments1\Index.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Appointments\AppList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -60,7 +60,11 @@ namespace lawyers.Controllers
             }
 
         }
-
+        public ActionResult logout()
+        {
+            Session.Abandon();
+            return RedirectToAction("Index", "Home");
+        }
         public ActionResult LawyerProfile()
         {
             if (Session["Lid"] == null)
@@ -72,10 +76,7 @@ namespace lawyers.Controllers
                 return View();
             }
         }
-        public ActionResult logout()
-        {
-            Session.Abandon();
-            return RedirectToAction("Index", "Home");
+         
         }
+       
     }
-}

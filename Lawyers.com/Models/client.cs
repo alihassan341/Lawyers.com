@@ -20,38 +20,37 @@ namespace Lawyers.com.Models
         {
             this.Appointments = new HashSet<Appointment>();
         }
-         [Key]
+    
         public int Cid { get; set; }
-        [Required(ErrorMessage ="First Name is required")]
+        [Required(ErrorMessage = "First_Name is required")]
         [DataType(DataType.Text)]
-        [Display(Name = "First Name")]
+        [Display(Name = "FirstName")]
         public string First_Name { get; set; }
-        [Required(ErrorMessage = "Last Name is required")]
+        [Required(ErrorMessage = "Last_Name is required")]
         [DataType(DataType.Text)]
-        [Display(Name = "Last Name")]
+        [Display(Name = "LastName")]
         public string Last_Name { get; set; }
         [DataType(DataType.EmailAddress)]
         [Required(ErrorMessage = "Please enter Email ID")]
         [RegularExpression(@"^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$", ErrorMessage = "Email is not valid.")]
         public string Email { get; set; }
+        [Required(ErrorMessage = "Address is required")]
+        [DataType(DataType.Text)]
+        [Display(Name = "Address")]
+        public string Number { get; set; }
         [Required(ErrorMessage = "PhoneNumber is required")]
         [DataType(DataType.PhoneNumber)]
         [Display(Name = "PhoneNumber")]
-        public string Number { get; set; }
-        [Required(ErrorMessage = "Addess is required")]
-        [DataType(DataType.Text)]
-        [Display(Name = "Addess")]
         public string Addess { get; set; }
         [Required(ErrorMessage = "Password is required")]
         [DataType(DataType.Password)]
         [Display(Name = "Password")]
         public string Password { get; set; }
-         [Required(ErrorMessage = "ConfirmPassword is required")]
+        [Required(ErrorMessage = "ConfirmPassword is required")]
         [DataType(DataType.Password)]
-        [Display(Name = "ConfirmPassword")]
-        [Compare("Password", ErrorMessage = "ConfirmPassword dost not match")]
+        [Display(Name = "Password")]
+        [Compare("Password",ErrorMessage ="Password ConfirmPassword not match")]
         public string ConfirmPassword { get; set; }
-        
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Appointment> Appointments { get; set; }
