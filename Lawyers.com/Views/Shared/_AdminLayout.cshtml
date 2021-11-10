@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="zxx">
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Admin Dashbord</title>
+    <!-- Bootstrap CSS -->
+    @*<link href="~/Content/bootstrap.min.css" rel="stylesheet" />*@
+    <!-- themefy CSS -->
+    <link href="~/Content/css/themify-icons.css" rel="stylesheet" />
+    <!-- menu css  -->
+    <link href="~/Content/css/metisMenu.css" rel="stylesheet" />
+    <!-- style CSS -->
+    <link href="~/Content/css/ok.css" rel="stylesheet" />
+</head>
+<body class="crm_body_bg">
+
+
+    <section>
+        <!-- main content part here -->
+        <!-- sidebar  -->
+        <nav class="sidebar vertical-scroll  ps-container ps-theme-default ps-active-y" style="background-color: #c18e3c; width:18%;">
+            @*<div class="logo d-flex justify-content-between">*@
+            @*<a href="#"><img src="~/Content/images/logo.jpg" alt=""></asty>*@
+            <h2 style="margin: 50px; margin-top:25px; color:#ffffff; padding: ; background-color: #c18e3c;">
+                ADMIN
+            </h2>
+            <ul id="sidebar_menu">
+                <li class="mm-active">
+                    <a class="has-arrow" href="#" aria-expanded="false">
+                        <span style="color: #ffffff;">Dashboard</span>
+                    </a>
+                    <ul>
+                        <li><a style="color: #ffffff;" class="active" href="/admin/register">Add New Admin</a></li>
+                        <li><a style="color: #ffffff;" href="/admin/logout">Logout</a></li>
+                    </ul>
+                </li>
+
+                <li class="">
+                    <a class="has-arrow" href="#" aria-expanded="false">
+                        <span style="color: #ffffff;">Charts</span>
+                    </a>
+                    <ul>
+                        <li><a style="color: #ffffff;" href="#">ChartJS</a></li>
+                        <li><a style="color: #ffffff;" href="#">Apex Charts</a></li>
+                    </ul>
+                </li>
+
+
+                <li class="">
+                    <a class="has-arrow" href="/Admin/lawyerslist" aria-expanded="false">
+                        <span style="color: #ffffff;">Lawyers</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a class="has-arrow" href="/Admin/clientslist" aria-expanded="false">
+                        <span style="color: #ffffff;">Clients</span>
+                    </a>
+                    @*<ul>
+                            <li><a style="color: #ffffff;" href="#">Maps JS</a></li>
+                            <li><a style="color: #ffffff;" href="#">Vector Maps</a></li>
+                        </ul>*@
+                </li>
+                <li class="">
+                    <a class="has-arrow" href="/Admin/Applist" aria-expanded="false">
+                        <span style="color: #ffffff;">Appointments</span>
+                    </a>
+                    @*<ul>
+                            <li ><a style="color: #ffffff;" href="#">Login</a></li>
+                            <li ><a style="color: #ffffff;" href="#">Register</a></li>
+                            <li ><a style="color: #ffffff;" href="#">Forgot Password</a></li>
+                            <li ><a style="color: #ffffff;" href="#">Gallery</a></li>
+                        </ul>*@
+                </li>
+            </ul>
+
+        </nav>
+        <div style="margin-left:82%;margin-top:1%; padding: 10px; background-color:#c18e3c; width:120px;">
+            <a href="/Admin/Register">
+                <span style="color:#ffffff">Add New Admin</span>
+            </a>
+        </div>
+        <div style="margin-left: 94%;width:50px; padding: 10px; background-color: #c18e3c;margin-top:-36px;">
+            <a href="/Admin/logout">
+                <span style="color:#ffffff">Logout</span>
+            </a>
+        </div>
+        <!-- footer part -->
+        <!--<div class="footer_part">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer_iner text-center">
+                            <p>2020 © Influence - Designed by <a href="#"> <i class="ti-heart"></i> </a><a href="#"> Lawyers.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+    </section>
+    @RenderBody()
+    <!-- footer  -->
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+
+    <script src="~/Scripts/popper.min.js"></script>
+    <!-- bootstarp js -->
+    <script src="~/Scripts/bootstrap.js"></script>
+    <!-- sidebar menu  -->
+    <script src="~/Scripts/metisMenu.js"></script>
+    <!-- custom js -->
+    <script src="~/Scripts/custom.js"></script>
+</body>
+</html>

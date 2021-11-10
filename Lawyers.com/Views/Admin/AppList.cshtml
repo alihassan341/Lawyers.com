@@ -1,5 +1,9 @@
 ﻿@model IEnumerable<Lawyers.com.Models.Appointment>
 
+@{
+    ViewBag.Title = "AppList";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
 <!DOCTYPE html>
 
 <html>
@@ -10,20 +14,24 @@
         th {
             padding: 20px
         }
+
         h1 {
             text-align: center;
             color: #c18e3c;
             width: 80%;
             padding: 5px;
-            margin-left:10%;
-            margin-bottom:0px;
+            margin-left: 10%;
+            margin-top:-35px;
+            margin-bottom: 0px;
         }
+
         .btn a:nth-child(1) {
             background: #c18e3c;
             color: white;
             padding: 20px;
             text-decoration: none
         }
+
         .btn1 a:nth-child(1) {
             background: white;
             border: 1px solid #c18e3c;
@@ -38,7 +46,7 @@
 <body>
 
     <H1>LATEST APPOINTMENTS</H1>
-    <table style="padding:20px;margin-left:50px;">
+    <table style="padding:20px;margin-left:17%;">
         <tr style="background: #c18e3c;color:white">
             <th>
                 @Html.DisplayNameFor(model => model.Name)
@@ -91,9 +99,9 @@
                     @Html.DisplayFor(modelItem => item.Status)
                 </td>
                 <td class="btn">
-                    @Html.ActionLink("Approved", "Edit", new { id = item.id})
-                  </td>
-                      <td class="btn1">
+                    @Html.ActionLink("Approved", "Edit", new { id = item.id })
+                </td>
+                <td class="btn1">
                     @Html.ActionLink("Cancelled", "Delete", new { id = item.id })
                 </td>
             </tr>

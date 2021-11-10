@@ -27,6 +27,10 @@ namespace Lawyers.com.Controllers
         {
             return View();
         }
+         public ActionResult Lawyers()
+        {
+            return View();
+        }
        
     }
 }

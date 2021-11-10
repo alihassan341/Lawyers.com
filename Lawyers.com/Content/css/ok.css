@@ -1,0 +1,4036 @@
+/* Normal desktop :1200px. */
+/* Normal desktop :992px. */
+/* Tablet desktop :768px. */
+/* small mobile :320px. */
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&amp;family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200&amp;display=swap");
+/* line 1, G:/admin_project/6 admin/sales/scss/_extends.scss */
+.CRM_dropdown.dropdown .dropdown-toggle:hover, .CRM_dropdown.dropdown .dropdown-toggle:focus {
+  background: -webkit-gradient(linear, left top, right top, from(#7C32FF), color-stop(70%, #A235EC), to(#C738D8));
+  background: -o-linear-gradient(left, #7C32FF 0%, #A235EC 70%, #C738D8 100%);
+  background: linear-gradient(90deg, #7C32FF 0%, #A235EC 70%, #C738D8 100%);
+}
+
+/* line 6, G:/admin_project/6 admin/sales/scss/_extends.scss */
+.profile_info .profile_info_iner .profile_author_name {
+  background-image: linear-gradient(to bottom right, #863ee2, #571f9e);
+}
+
+/**************** common css start ****************/
+/* line 3, G:/admin_project/6 admin/sales/scss/_reset.scss */
+body {
+  font-family: "Nunito", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  background: #FFFFFF;
+}
+
+@media (min-width: 1200px) {
+  /* line 12, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .container {
+    max-width: 1310px;
+  }
+}
+
+/* line 16, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.body_white_bg {
+  background: #fff;
+}
+
+/* line 19, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.br_5 {
+  border-radius: 5px;
+}
+
+/* line 22, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.border_bottom_1px {
+  border-bottom: 1px solid #E0E2E8;
+}
+
+/* line 25, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.message_submit_form:focus {
+  outline: none;
+}
+
+/* line 28, G:/admin_project/6 admin/sales/scss/_reset.scss */
+input:hover, input:focus {
+  outline: none !important;
+  box-shadow: 0px 0px 0px 0px transparent !important;
+}
+
+/* line 32, G:/admin_project/6 admin/sales/scss/_reset.scss */
+:focus {
+  outline: -webkit-focus-ring-color auto 0;
+}
+
+/* line 35, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.custom-file-input:focus ~ .custom-file-label {
+  border-color: transparent;
+  box-shadow: none;
+}
+
+/* line 39, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.form-control {
+  border-color: #BBC1C9;
+}
+
+/* line 42, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.form-control:focus {
+  box-shadow: 0 0 0 0rem transparent !important;
+  border-color: #BBC1C9;
+}
+
+/* line 46, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.dropdown-menu {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 50, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.section_padding {
+  padding: 120px 0px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 50, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .section_padding {
+    padding: 80px 0px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 50, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .section_padding {
+    padding: 70px 0px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  /* line 50, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .section_padding {
+    padding: 70px 0px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 50, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .section_padding {
+    padding: 70px 0px;
+  }
+}
+
+/* line 65, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.padding_top {
+  padding-top: 120px;
+}
+
+@media (max-width: 991px) {
+  /* line 65, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .padding_top {
+    padding-top: 70px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 65, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .padding_top {
+    padding-top: 80px;
+  }
+}
+
+/* line 74, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.padding_bottom {
+  padding-bottom: 120px;
+}
+
+@media (max-width: 991px) {
+  /* line 74, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .padding_bottom {
+    padding-bottom: 70px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 74, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .padding_bottom {
+    padding-bottom: 80px;
+  }
+}
+
+/* line 84, G:/admin_project/6 admin/sales/scss/_reset.scss */
+a {
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* line 87, G:/admin_project/6 admin/sales/scss/_reset.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 93, G:/admin_project/6 admin/sales/scss/_reset.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #14256A;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* line 99, G:/admin_project/6 admin/sales/scss/_reset.scss */
+h2 {
+  font-size: 30px;
+}
+
+/* line 102, G:/admin_project/6 admin/sales/scss/_reset.scss */
+h3 {
+  font-size: 26px;
+}
+
+/* line 105, G:/admin_project/6 admin/sales/scss/_reset.scss */
+h4 {
+  font-size: 20px;
+}
+
+/* line 108, G:/admin_project/6 admin/sales/scss/_reset.scss */
+h5 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+/* line 113, G:/admin_project/6 admin/sales/scss/_reset.scss */
+li {
+  list-style: none;
+}
+
+/* line 116, G:/admin_project/6 admin/sales/scss/_reset.scss */
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 120, G:/admin_project/6 admin/sales/scss/_reset.scss */
+p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0px;
+  color: #828BB2;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+}
+
+/* line 129, G:/admin_project/6 admin/sales/scss/_reset.scss */
+a:focus, .button:focus, button:focus, .btn:focus {
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+/* line 135, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.p_30 {
+  padding: 30px;
+}
+
+@media (max-width: 991px) {
+  /* line 135, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .p_30 {
+    padding: 20px;
+  }
+}
+
+/* line 141, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.p_20 {
+  padding: 20px;
+}
+
+/* line 144, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.p_15 {
+  padding: 20px 20px 15px;
+}
+
+/* line 147, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.pb_20 {
+  padding-bottom: 20px;
+}
+
+/* line 150, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.mt_60 {
+  margin-top: 60px;
+}
+
+@media (max-width: 991px) {
+  /* line 150, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .mt_60 {
+    margin-top: 30px;
+  }
+}
+
+/* line 156, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.mt_25 {
+  margin-top: 25px;
+}
+
+/* line 160, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.mt_30 {
+  margin-top: 30px;
+}
+
+@media (max-width: 991px) {
+  /* line 160, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .mt_30 {
+    margin-top: 15px;
+  }
+}
+
+/* line 167, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.mt_10 {
+  margin-top: 10px;
+}
+
+/* line 170, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.mb_15 {
+  margin-bottom: 15px;
+}
+
+/* line 173, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.mb_15_imp {
+  margin-bottom: 13px !important;
+}
+
+/* line 176, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.mb_20 {
+  margin-bottom: 20px !important;
+}
+
+/* line 179, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.mb_20_imp {
+  margin-bottom: 20px;
+}
+
+/* line 182, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.mb_25 {
+  margin-bottom: 20px;
+}
+
+/* line 185, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.mb_50 {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 575.98px) {
+  /* line 185, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .mb_50 {
+    margin-bottom: 30px;
+  }
+}
+
+/* line 191, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.mt_50 {
+  margin-top: 50px;
+}
+
+@media (max-width: 575.98px) {
+  /* line 191, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .mt_50 {
+    margin-top: 25px;
+  }
+}
+
+/* line 197, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.mt_20 {
+  margin-top: 20px;
+}
+
+/* line 200, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.mb_10 {
+  margin-bottom: 10px !important;
+}
+
+/* line 204, G:/admin_project/6 admin/sales/scss/_reset.scss */
+th:focus, td:focus {
+  outline: -webkit-focus-ring-color auto 0;
+}
+
+/* line 208, G:/admin_project/6 admin/sales/scss/_reset.scss */
+table.dataTable tbody th, table.dataTable tbody td {
+  vertical-align: middle;
+}
+
+/* line 211, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.mt_40 {
+  margin-top: 40px;
+}
+
+/* line 214, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.section_bg {
+  background-color: #fef1f2;
+}
+
+/* line 217, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_checkbox {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 228, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* line 235, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_checkbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: transparent;
+  border: 1px solid #e4e8ec;
+}
+
+/* line 246, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.section_tittle {
+  text-align: center;
+}
+
+/* line 248, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.section_tittle h2 {
+  font-size: 36px;
+  margin-bottom: 25px;
+  line-height: 33px;
+}
+
+@media (max-width: 991px) {
+  /* line 248, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .section_tittle h2 {
+    margin-bottom: 15px;
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 991px) {
+  /* line 248, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .section_tittle h2 {
+    font-size: 30px;
+  }
+}
+
+/* line 260, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.section_tittle p {
+  margin-bottom: 72px;
+}
+
+@media (max-width: 991px) {
+  /* line 260, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .section_tittle p {
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 260, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .section_tittle p {
+    margin-bottom: 50px;
+  }
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+/* line 271, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_checkbox:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+/* line 278, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_checkbox input:checked ~ .checkmark:after {
+  display: block;
+  left: 6px;
+  top: 1px;
+  width: 5px;
+  height: 9px;
+  border: solid #7e7172;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  content: "";
+}
+
+/* line 293, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_checkbox span {
+  padding: 0 !important;
+}
+
+/* line 299, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.custom_checkbox tr th:first-child, .custom_checkbox tr td:first-child {
+  padding: 16px 0 16px 0 !important;
+}
+
+/* line 304, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.border_1px {
+  border-right: 1px solid rgba(130, 139, 178, 0.3);
+  height: 40px;
+  margin-right: 20px;
+  margin-left: 8px;
+}
+
+/* line 310, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.nice_Select {
+  border: 0;
+  border-radius: 0px;
+  padding-left: 0;
+  padding-right: 30px;
+  color: #415094;
+}
+
+/* line 316, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.nice_Select .nice-select-search-box {
+  width: 200px !important;
+}
+
+/* line 319, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.nice_Select.bgLess {
+  background: transparent;
+  border: 0 !important;
+}
+
+/* line 323, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.nice_Select:after {
+  content: "\e62a";
+  font-family: 'themify';
+  border: 0;
+  transform: rotate(0deg);
+  margin-top: -16px;
+  font-size: 12px;
+  font-weight: 500;
+  right: 18px;
+  transform-origin: none;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  margin-top: -22px;
+}
+
+/* line 340, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.nice_Select.open::after {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  margin-top: 15px;
+  margin-top: 12px;
+  right: 12px;
+}
+
+/* line 350, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.nice_Select:focus {
+  box-shadow: none;
+  border: 0 !important;
+}
+
+/* line 354, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.nice_Select:hover {
+  border: 0;
+}
+
+/* line 357, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.nice_Select.open .list {
+  min-width: 200px;
+  left: 0;
+  overflow-y: auto;
+}
+
+/* line 361, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.nice_Select.open .list li:first-child {
+  color: #000;
+}
+
+/* line 365, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.nice_Select .current {
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+/* line 371, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.nice_Select .list {
+  width: 100%;
+  left: auto;
+  right: 0;
+  border-radius: 0px 0px 10px 10px;
+  margin-top: 1px;
+  z-index: 9999 !important;
+  box-shadow: 0px 10px 20px rgba(108, 39, 255, 0.3);
+}
+
+/* line 379, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.nice_Select .list li {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* line 387, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.nice_Select2 {
+  border: 0;
+  border-radius: 0px;
+  padding-left: 0;
+  padding-right: 5px;
+  color: #0FC171;
+  background: #E4FFFA;
+  border: 0;
+  padding-left: 18px;
+  padding-right: 38px;
+  border-radius: 3px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 10px;
+  text-transform: capitalize;
+}
+
+/* line 402, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.nice_Select2 .nice-select-search-box {
+  width: 100% !important;
+  margin-top: 5px;
+  display: none !important;
+}
+
+/* line 407, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.nice_Select2:after {
+  content: "\e64b";
+  font-family: 'themify';
+  border: 0;
+  transform: rotate(0deg);
+  margin-top: -16px;
+  font-size: 12px;
+  font-weight: 500;
+  right: 18px;
+  transform-origin: none;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  margin-top: -16px;
+  right: 20px;
+  margin-top: -15px;
+  right: 25px;
+  color: #0FC171;
+}
+
+/* line 427, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.nice_Select2:active, .nice_Select2.open, .nice_Select2:focus {
+  border-color: none;
+  border: 0;
+}
+
+/* line 431, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.nice_Select2.open::after {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  margin-top: 8px;
+  right: 20px;
+}
+
+/* line 440, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.nice_Select2:focus {
+  box-shadow: none;
+  border: 0;
+}
+
+/* line 444, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.nice_Select2:hover {
+  border: 0;
+}
+
+/* line 447, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.nice_Select2.open .list {
+  min-width: 100%;
+  margin-top: 5px;
+  padding-top: 0 !important;
+  left: 0;
+  overflow-y: auto;
+}
+
+/* line 454, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.nice_Select2.open .list li:first-child {
+  color: #000;
+}
+
+/* line 458, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.nice_Select2 .current {
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+/* line 464, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.nice_Select2 .list {
+  width: 100%;
+  left: auto;
+  right: 0;
+  border-radius: 0px 0px 10px 10px;
+  margin-top: 1px;
+  z-index: 9999 !important;
+  box-shadow: 0px 10px 20px rgba(108, 39, 255, 0.3);
+}
+
+/* line 472, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.nice_Select2 .list li {
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* line 484, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.white_box {
+  background-color: #fff;
+  padding: 20px;
+}
+
+@media (max-width: 991px) {
+  /* line 484, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .white_box {
+    padding: 20px 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  /* line 484, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .white_box {
+    padding: 25px 15px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 484, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .white_box {
+    padding: 30px 20px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
+  /* line 484, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .white_box {
+    padding: 30px 20px;
+  }
+}
+
+/* line 499, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.white_box h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  margin-bottom: 22px;
+  font-family: "Nunito", sans-serif;
+}
+
+@media (max-width: 991px) {
+  /* line 499, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .white_box h3 {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 499, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .white_box h3 {
+    margin-bottom: 10px;
+  }
+}
+
+/* line 511, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.white_box h3 span {
+  font-weight: 300;
+  color: #7e7172;
+}
+
+/* line 517, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.progress-bar {
+  text-align: right;
+  padding-right: 8px;
+}
+
+/* line 521, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.white_box_p_30 {
+  padding: 30px;
+  background-color: #fff;
+}
+
+@media (max-width: 991px) {
+  /* line 521, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .white_box_p_30 {
+    padding: 25px 15px;
+  }
+}
+
+/* line 530, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cu_dropdown .btn {
+  border: 1px solid #f1f2f3;
+  background-color: #fef1f2;
+  color: #7e7172;
+  font-size: 12px;
+  font-weight: 300;
+  padding: 5px 15px;
+}
+
+/* line 538, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cu_dropdown .btn_1 {
+  padding: 11px 20px;
+}
+
+/* line 541, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cu_dropdown .dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: 0;
+  content: "\e64b";
+  border-top: none;
+  font-family: 'themify';
+  font-size: 10px;
+}
+
+/* line 550, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cu_dropdown .dropdown-menu {
+  min-width: auto;
+  background-color: #14256A;
+  min-width: 102px;
+  left: 0 !important;
+  border-radius: 0 0 5px 5px;
+  top: -2px !important;
+  padding: 17px 0;
+}
+
+/* line 558, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cu_dropdown .dropdown-menu .dropdown-item {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: capitalize;
+  padding: 7px 20px;
+  padding: 7px 20px;
+  color: #fff;
+}
+
+/* line 568, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cu_dropdown .left_arrow:hover {
+  background-color: transparent;
+  padding-left: 38px;
+}
+
+/* line 572, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cu_dropdown .left_arrow:after {
+  left: 18px;
+  top: 11px;
+}
+
+/* line 591, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.switch {
+  -webkit-appearance: none;
+  background-color: gray;
+  border-radius: 43px;
+  position: relative;
+  cursor: pointer;
+  padding: 14px 25px !important;
+  margin-right: 20px;
+  height: 30px;
+}
+
+/* line 600, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.switch::after {
+  top: 6px;
+  left: 6px;
+  content: '';
+  width: 15px;
+  height: 15px;
+  background-color: #2E4765;
+  position: absolute;
+  border-radius: 100%;
+  transition: 1s;
+}
+
+/* line 611, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.switch:checked {
+  background-color: #2E4765 !important;
+}
+
+/* line 613, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.switch:checked::after {
+  background-color: #fff !important;
+}
+
+/* line 616, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.switch:checked::after {
+  transform: translateX(25px);
+}
+
+/* line 620, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.switch:focus {
+  outline-color: transparent;
+}
+
+/* line 624, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.menu_bropdown {
+  display: inline-block;
+}
+
+/* line 626, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.menu_bropdown .dropdown-menu {
+  min-width: 168px !important;
+  right: 0;
+}
+
+@media (max-width: 991px) {
+  /* line 631, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .sidebar_widget {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 631, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .sidebar_widget {
+    margin-top: 0;
+  }
+}
+
+/* line 639, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.text_underline {
+  color: #14256A;
+  text-decoration: underline;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* line 643, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.text_underline:hover {
+  color: #14256A;
+  text-decoration: underline;
+}
+
+/* line 648, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.check_box_item {
+  margin-top: 11px;
+}
+
+/* line 650, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.check_box_item .single_check_box {
+  padding: 15px 0;
+  border-bottom: 1px solid #e4e8ec;
+}
+
+/* line 653, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.check_box_item .single_check_box .switch {
+  -webkit-appearance: none;
+  background-color: transparent;
+  padding: 14px 27px !important;
+  margin-right: 0;
+  border: 1px solid #e4e8ec;
+}
+
+/* line 659, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.check_box_item .single_check_box .switch:after {
+  top: 4px;
+  width: 20px;
+  height: 20px;
+}
+
+/* line 665, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.check_box_item .single_check_box .switch:checked::after {
+  background-color: #7e7172 !important;
+  left: 4px;
+}
+
+/* line 669, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.check_box_item .single_check_box .switch:checked {
+  background-color: transparent !important;
+}
+
+/* line 675, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.list_header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  align-items: center;
+}
+
+@media (max-width: 575.98px) {
+  /* line 675, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .list_header {
+    display: block;
+  }
+}
+
+/* line 686, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.list_header p {
+  color: #14256A;
+  font-weight: 400;
+  font-size: 14px;
+  color: #7F8B9F;
+  font-weight: 400;
+}
+
+/* line 693, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.list_header .nice_Select {
+  margin-left: 15px;
+}
+
+@media (max-width: 575.98px) {
+  /* line 693, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .list_header .nice_Select {
+    margin-left: 10px;
+  }
+}
+
+/* line 699, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.list_header .list_header_filter {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 575.98px) {
+  /* line 699, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .list_header .list_header_filter {
+    margin-top: 15px;
+  }
+}
+
+/* line 705, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.list_header .list_header_filter img {
+  width: 17px;
+  margin-right: 8px;
+}
+
+/* line 713, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_modal .modal-content {
+  background-color: #fef1f2;
+  padding: 0 30px;
+}
+
+@media (max-width: 575.98px) {
+  /* line 713, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .cs_modal .modal-content {
+    padding: 0 20px;
+  }
+}
+
+/* line 720, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_modal .modal-header {
+  padding: 34px 0 30px 0px;
+  align-items: center;
+  border-bottom: 0px solid transparent;
+}
+
+/* line 724, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_modal .modal-header h5 {
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+/* line 730, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_modal .modal-header .close {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+}
+
+/* line 734, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_modal .modal-header .close i {
+  font-size: 14px;
+  color: #707070;
+}
+
+/* line 741, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_modal .modal-body {
+  padding: 35px 30px !important;
+  background: #fff;
+  border-radius: 5px;
+}
+
+@media (max-width: 575.98px) {
+  /* line 741, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .cs_modal .modal-body {
+    padding: 25px 20px !important;
+  }
+}
+
+/* line 748, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_modal .modal-body .chose_thumb_title {
+  font-size: 12px;
+  font-weight: 300;
+  color: #222222;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 0px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* line 759, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_modal .modal-body .input_wrap label {
+  font-size: 12px;
+  font-weight: 300;
+  color: #222222;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 0px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* line 769, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_modal .modal-body .input_wrap textarea {
+  height: 100px;
+  padding: 0;
+  line-height: 28px;
+  padding: 13px 25px;
+}
+
+/* line 776, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_modal .modal-body .nice_Select, .cs_modal .modal-body input, .cs_modal .modal-body textarea {
+  height: 50px;
+  line-height: 50px;
+  background-color: #fff;
+  border: 1px solid #eee1e2;
+  padding: 10px 25px;
+  color: #7e7172;
+  font-weight: 500;
+  font-size: 13px;
+  width: 100%;
+  display: block;
+  margin-bottom: 21px;
+  font-weight: 300;
+  border-radius: 3px;
+}
+
+/* line 790, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_modal .modal-body .nice_Select::placeholder, .cs_modal .modal-body input::placeholder, .cs_modal .modal-body textarea::placeholder {
+  color: #7e7172;
+  font-weight: 300;
+  opacity: 1;
+}
+
+/* line 796, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_modal .modal-body .nice_Select {
+  line-height: 30px;
+}
+
+/* line 798, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_modal .modal-body .nice_Select :after {
+  left: 22px;
+}
+
+/* line 802, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_modal .modal-body ::placeholder {
+  color: #14256A;
+}
+
+/* line 806, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_modal .modal_btn {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+/* line 810, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_modal .modal_btn .btn_1 {
+  padding: 16px 26px !important;
+  margin: 0 5px;
+  text-align: center;
+}
+
+/* line 817, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_modal .modal-footer {
+  border-top: 0px solid transparent;
+  padding: 30px 0 40px 0;
+}
+
+/* line 823, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.form_box .from_group {
+  display: block;
+  width: 100%;
+  margin-bottom: 23px;
+}
+
+/* line 827, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.form_box .from_group label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 13px;
+  color: #707070;
+}
+
+/* line 833, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.form_box .from_group .nice_Select, .form_box .from_group input, .form_box .from_group textarea {
+  width: 100%;
+  display: block;
+  background-color: #fef1f2;
+  border: 1px solid #f1f2f3;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+/* line 843, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.form_box .from_group textarea {
+  height: 115px;
+  line-height: 27px;
+}
+
+/* line 847, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.form_box .from_group .bootstrap-tagsinput input {
+  border: none !important;
+  width: auto !important;
+  display: inline-block !important;
+  background-color: transparent !important;
+}
+
+/* line 853, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.form_box .from_group .bootstrap-tagsinput .badge [data-role="remove"]:after {
+  background-color: transparent !important;
+}
+
+/* line 856, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.form_box .from_group .bootstrap-tagsinput .badge {
+  margin: 0 5px;
+  padding: 9px 8px;
+  line-height: 12px;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+/* line 863, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.form_box .from_group .badge-info {
+  color: #fff;
+  background-color: #2EC9B8;
+}
+
+/* line 867, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.form_box .from_group .nice_Select {
+  line-height: 30px;
+}
+
+/* line 872, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.note-editable {
+  background-color: #fef1f2;
+}
+
+/* line 876, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.note-btn-group.note-style {
+  display: none;
+}
+
+/* line 883, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.plr_30 {
+  padding: 0 30px !important;
+}
+
+@media (max-width: 767.98px) {
+  /* line 883, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .plr_30 {
+    padding: 0 15px !important;
+  }
+}
+
+/* line 890, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.mb_8 {
+  margin-bottom: 8px !important;
+}
+
+/* line 893, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.mb_7 {
+  margin-bottom: 7px !important;
+}
+
+/* line 904, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.ml-10 {
+  margin-left: 10px;
+}
+
+/* line 907, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.mb_30 {
+  margin-bottom: 30px !important;
+}
+
+@media (max-width: 575.98px) {
+  /* line 910, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .lms_block {
+    display: block !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  /* line 916, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .add_button {
+    margin-top: 15px;
+    margin-left: 0;
+  }
+}
+
+/* line 924, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.lms_pagination_wrap {
+  margin-top: 30px;
+}
+
+/* line 927, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.lms_pagination_wrap ul li {
+  display: inline-block;
+  margin: 0 .8px;
+}
+
+/* line 930, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.lms_pagination_wrap ul li a {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background: #fff;
+  line-height: 40px;
+  color: #cec1c2;
+  text-align: center;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+/* line 940, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.lms_pagination_wrap ul li a.active {
+  background: #fe1724;
+  color: #fff;
+}
+
+/* line 944, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.lms_pagination_wrap ul li a:hover {
+  background: #fe1724;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  /* line 957, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .modal-dialog.custom-modal-dialog {
+    max-width: 650px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 962, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .modal-dialog.custom-modal-dialog {
+    max-width: 950px;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 967, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .modal-dialog.custom-modal-dialog {
+    max-width: 1050px;
+  }
+}
+
+/* line 973, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.file_upload {
+  border: 1px solid #eee1e2 !important;
+  padding: 9px 24px;
+  border-radius: 3px;
+  /* input file style */
+}
+
+/* line 977, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.file_upload label {
+  margin-bottom: 0 !important;
+}
+
+/* line 980, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.file_upload .form-group {
+  padding: 0;
+  margin-bottom: 0;
+}
+
+/* line 984, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.file_upload .btn_file_upload {
+  color: #fff;
+  padding: 0;
+  height: 30px;
+  line-height: 30px;
+  border: 0;
+  display: inline-block;
+}
+
+/* line 991, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.file_upload .btn_file_upload:hover, .file_upload .btn_file_upload:focus {
+  color: #888888;
+  border-color: #888888;
+}
+
+/* line 1000, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.file_upload .input-file, .file_upload .input-file2 {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+/* line 1007, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.file_upload .input-file + .js-labelFile, .file_upload .input-file + .js-labelFile2, .file_upload .input-file2 + .js-labelFile, .file_upload .input-file2 + .js-labelFile2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+/* line 1015, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.file_upload .btn {
+  padding: 0px 16px !important;
+  border-radius: 5px;
+  background-color: #fe1724;
+  display: inline-block !important;
+  font-size: 14px;
+  color: #fff !important;
+  border-radius: 30px;
+  bottom: 0;
+  margin-bottom: 0;
+}
+
+/* line 1025, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.file_upload .btn:hover {
+  background-color: #2E4765;
+  color: #fff;
+  border: 0;
+}
+
+/* line 1031, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.file_upload .form-group {
+  background-color: #fff;
+  width: 100%;
+  padding: 0px;
+  border-radius: 5px;
+}
+
+/* line 1038, G:/admin_project/6 admin/sales/scss/_reset.scss */
+td:focus, th:focus {
+  outline: none !important;
+}
+
+/* line 1041, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.mb_20 {
+  margin-bottom: 20px;
+}
+
+/* line 1044, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.mr_10 {
+  margin-right: 10px !important;
+}
+
+/* line 1049, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.checkbox_wrap p {
+  font-size: 13px;
+  font-weight: 300;
+  color: #7e7172;
+  margin-bottom: 0;
+}
+
+/* line 1056, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.lms_checkbox_1 {
+  display: inline-block;
+  height: 30px;
+  position: relative;
+  width: 50px;
+  margin-bottom: 0;
+  margin-right: 15px;
+}
+
+/* line 1063, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.lms_checkbox_1 input {
+  display: none !important;
+}
+
+/* line 1066, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.lms_checkbox_1 .slider-check {
+  background-color: #7e7172;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+/* line 1075, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.lms_checkbox_1 .slider-check.round {
+  border-radius: 34px;
+}
+
+/* line 1078, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.lms_checkbox_1 .slider-check::before {
+  background-color: #222222;
+  bottom: 5px;
+  content: "";
+  height: 20px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 20px;
+}
+
+/* line 1088, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.lms_checkbox_1 .slider-check.round:before {
+  border-radius: 50%;
+}
+
+/* line 1092, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.lms_checkbox_1 input:checked + .slider-check {
+  background-color: #fef1f2;
+  color: #fff;
+  content: "oui";
+}
+
+/* line 1097, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.lms_checkbox_1 input:checked + .slider-check:before {
+  transform: translateX(20px);
+  background: #fe1724;
+}
+
+/* line 1107, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.input_wrap label {
+  font-size: 12px;
+  font-weight: 300;
+  color: #222222;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 0px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+@media (min-width: 991px) {
+  /* line 1122, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .medium_modal_width .modal-dialog {
+    max-width: 780px;
+  }
+}
+
+/* line 1130, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.list_header_btn_wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: space-between;
+  width: 100%;
+  margin-right: 60px;
+}
+
+@media (max-width: 575.98px) {
+  /* line 1130, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .list_header_btn_wrapper {
+    display: block;
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 1130, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .list_header_btn_wrapper {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 1130, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .list_header_btn_wrapper {
+    margin-right: 0;
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 1130, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .list_header_btn_wrapper {
+    margin-right: 0;
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
+  /* line 1130, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .list_header_btn_wrapper {
+    margin-right: 30px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 1158, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .list_header_block {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 1162, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .list_header_block .success_faild_btn {
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
+  /* line 1167, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .list_header_block .serach_field_2 {
+    width: 300px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 1167, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .list_header_block .serach_field_2 {
+    width: 380%;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 1175, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .list_header_block .box_right {
+    justify-content: space-between;
+  }
+}
+
+/* line 1183, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.gj-datepicker .fa-calendar-alt {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #cec1c2;
+  right: 25px;
+}
+
+/* line 1193, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.white_box_border {
+  border: 1px solid rgba(202, 206, 213, 0.7);
+}
+
+/* line 1197, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.nowrap {
+  white-space: nowrap;
+}
+
+/* line 1201, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+/* line 1204, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.mb_15 {
+  margin-bottom: 15px;
+}
+
+/* line 1207, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.mr-10 {
+  margin-right: 10px;
+}
+
+/* line 1210, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.mr_5 {
+  margin-right: 5px;
+}
+
+/* line 1213, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.mb_30 {
+  margin-bottom: 30px;
+}
+
+/* line 1216, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.mt_10px {
+  margin-top: 10px;
+}
+
+/* line 1219, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.pt_30 {
+  padding-top: 30px !important;
+}
+
+/* line 1226, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.wrapper .progress {
+  margin-bottom: 15px;
+}
+
+/* line 1240, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.apexcharts-datalabels-group {
+  position: relative;
+  top: -13px !important;
+}
+
+/* line 1244, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_modal {
+  background-color: #fef1f2;
+}
+
+/* line 1246, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_modal .modal-header {
+  background-color: #F7FAFF;
+  padding: 23px 30px;
+  border-bottom: 0px solid transparent;
+}
+
+/* line 1250, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_modal .modal-header h5 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* line 1254, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_modal .modal-header span {
+  font-size: 14px;
+  color: #707070;
+  opacity: 1;
+}
+
+/* line 1260, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_modal .modal-body {
+  padding: 35px 30px;
+}
+
+/* line 1262, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_modal .modal-body input, .cs_modal .modal-body .nice_Select {
+  height: 50px;
+  line-height: 50px;
+  padding: 10px 20px;
+  border: 1px solid #F1F3F5;
+  color: #707070;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #fff;
+  width: 100%;
+}
+
+/* line 1273, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_modal .modal-body .nice_Select {
+  line-height: 29px;
+}
+
+/* line 1275, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_modal .modal-body .nice_Select:after {
+  right: 22px;
+}
+
+/* line 1278, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_modal .modal-body .nice_Select .list {
+  width: 100%;
+}
+
+/* line 1282, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_modal .modal-body .form-group {
+  margin-bottom: 12px;
+}
+
+/* line 1285, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_modal .modal-body textarea {
+  height: 168px;
+  padding: 15px 20px;
+  border: 1px solid #F1F3F5;
+  color: #707070;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* line 1293, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_modal .modal-body p {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 25px;
+  color: #707070;
+  text-align: center;
+}
+
+/* line 1299, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_modal .modal-body p a {
+  color: #2E4765;
+}
+
+/* line 1304, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_modal .modal-body .btn_1 {
+  width: 100%;
+  display: block;
+  margin-top: 20px;
+}
+
+/* line 1310, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_modal .modal-body .social_login_btn .btn_1 {
+  color: #fff;
+  background-color: #3B5998;
+  border: 1px solid #3B5998;
+  margin-top: 0;
+}
+
+/* line 1315, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_modal .modal-body .social_login_btn .btn_1:hover {
+  color: #fff !important;
+}
+
+/* line 1318, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_modal .modal-body .social_login_btn .btn_1 i {
+  margin-right: 10px;
+}
+
+/* line 1324, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_modal .modal-body .social_login_btn .form-group:last-child .btn_1 {
+  background-color: #4285F4;
+  border: 1px solid #4285F4;
+}
+
+/* line 1331, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_modal .modal-body .pass_forget_btn {
+  color: #707070;
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 500;
+  display: inline-block;
+}
+
+/* line 1338, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_modal .modal-body .pass_forget_btn:hover {
+  color: #2E4765;
+}
+
+/* line 1346, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.border_style {
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 13px 0 17px;
+  position: relative;
+  z-index: 1;
+}
+
+/* line 1353, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.border_style span {
+  padding: 0 25px;
+  text-align: center;
+  display: inline-block;
+  background-color: #fff;
+}
+
+/* line 1359, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.border_style:after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: #BBC1C9;
+  top: 24px;
+  left: 0;
+  z-index: -1;
+}
+
+/* line 1371, G:/admin_project/6 admin/sales/scss/_reset.scss */
+p a {
+  color: #7e7172;
+}
+
+/* line 1373, G:/admin_project/6 admin/sales/scss/_reset.scss */
+p a:hover {
+  color: #2E4765;
+}
+
+/* line 1379, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_check_box {
+  display: flex;
+  margin-top: 20px;
+}
+
+/* line 1382, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_check_box input, .cs_check_box label {
+  line-height: 20px !important;
+  height: auto !important;
+  width: auto !important;
+  max-width: auto;
+}
+
+/* line 1388, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_check_box .common_checkbox {
+  display: none;
+}
+
+/* line 1391, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_check_box label {
+  position: relative;
+  padding-left: 34px;
+  margin-bottom: 0;
+}
+
+/* line 1396, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_check_box .common_checkbox + label {
+  display: block;
+  cursor: pointer;
+  color: #7e7172;
+}
+
+/* line 1401, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_check_box .common_checkbox + label:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #7e7172;
+  border-radius: 5px;
+  content: "";
+}
+
+/* line 1411, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_check_box .common_checkbox:checked + label:after {
+  content: '\f00c';
+  font-family: 'Font Awesome\ 5 Free';
+  font-weight: 900;
+  padding: 2px;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+}
+
+/* line 1421, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.cs_check_box .common_checkbox {
+  display: none !important;
+}
+
+/* line 1425, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.hide_pils.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: .255em;
+  vertical-align: .255em;
+  content: "";
+  border-top: .3em solid;
+  border-right: .3em solid transparent;
+  border-bottom: 0;
+  border-left: .3em solid transparent;
+  border: 0 !important;
+}
+
+/* line 1436, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.mr_20 {
+  margin-right: 20px;
+}
+
+@media (max-width: 575.98px) {
+  /* line 1439, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .mb-sm-15 {
+    margin-bottom: 15px;
+  }
+}
+
+/* line 1445, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.heading_6 {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+  color: #2E4765;
+  margin-bottom: 0;
+}
+
+/* line 1453, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.card_height_100 {
+  height: calc(100% - 20px);
+}
+
+/* line 1456, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.card_height_50 {
+  height: calc(50% - 30px);
+}
+
+/* line 1460, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.page-item.active .page-link {
+  background-color: #2D1967;
+  border-color: #2D1967;
+}
+
+/* line 1463, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.page-item.active .page-link:hover {
+  color: #fff;
+  background-color: #2D1967e6;
+  border-color: #2D1967e6;
+}
+
+/* line 1469, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.page-link {
+  color: #2D1967;
+}
+
+/* line 1471, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.page-link:hover {
+  color: #fff;
+  background-color: #2D1967e6;
+  border-color: #2D1967e6;
+}
+
+/* line 1477, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.btn-primary {
+  color: #fff;
+  background-color: #2D1967;
+  border-color: #2D1967;
+}
+
+/* line 1482, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.btn-primary:hover {
+  color: #fff;
+  background-color: #2D1967e6;
+  border-color: #2D1967e6;
+}
+
+@media (max-width: 991px) {
+  /* line 1488, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .sm_padding_15px {
+    padding: 15px !important;
+  }
+}
+
+/* line 1495, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.dashboard_header .dashboard_header_title h3 {
+  font-size: 33px;
+  font-weight: 600;
+  color: #2E4765;
+  margin-bottom: 7px;
+}
+
+/* line 1500, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.dashboard_header .dashboard_header_title h3 span {
+  color: #2D1967;
+}
+
+/* line 1504, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.dashboard_header .dashboard_header_title p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #7F8B9F;
+}
+
+@media (max-width: 991px) {
+  /* line 1512, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .dashboard_breadcam {
+    text-align: left !important;
+    padding-top: 10px !important;
+  }
+}
+
+/* line 1517, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.dashboard_breadcam ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* line 1521, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.dashboard_breadcam ul li {
+  font-size: 17px;
+  font-weight: 400;
+  color: #2D1967;
+  padding-left: 14px;
+  position: relative;
+}
+
+/* line 1527, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.dashboard_breadcam ul li:first-child {
+  padding-left: 0;
+}
+
+/* line 1529, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.dashboard_breadcam ul li:first-child::before {
+  display: none;
+}
+
+/* line 1533, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.dashboard_breadcam ul li::before {
+  color: #2D1967;
+  content: "/";
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* line 1541, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.dashboard_breadcam ul li a {
+  width: 30px;
+  height: 30px;
+  background: #FFE7DF;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 26px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+/* line 1550, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.dashboard_breadcam ul li a img {
+  line-height: 30px;
+}
+
+/* line 1558, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.header_prise h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 0;
+}
+
+/* line 1564, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.header_prise h5 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #2D1967;
+  margin-bottom: 0;
+}
+
+/* line 1572, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.pink_bg {
+  background: #FE80B2 !important;
+}
+
+/* line 1575, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.parpel_bg {
+  background: #833CDF !important;
+}
+
+/* line 1580, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.map-js-height {
+  height: 450px;
+}
+
+@media (max-width: 1365.98px) {
+  /* line 1580, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .map-js-height {
+    height: 350px;
+  }
+}
+
+/* line 1587, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.border_radius_0 {
+  border-radius: 0 !important;
+}
+
+/* line 1590, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.white_bg {
+  background: #fff;
+}
+
+/* line 1593, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.border_1px {
+  border: 1px solid #eee;
+}
+
+/* line 1597, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.card_footer {
+  padding: 50px;
+  border-top: 1px solid #f2f4ff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 1603, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.SubTitle {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 5px;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+/* line 1609, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.p-20 {
+  padding: 20px;
+}
+
+/* line 1612, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.bg-primary {
+  background-color: #4c2fbf !important;
+  color: #fff;
+}
+
+/* line 1616, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.bg-secondary {
+  background-color: #2e9de4 !important;
+  color: #fff;
+}
+
+/* line 1620, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.bg-success {
+  background-color: #80cf00 !important;
+  color: #fff;
+}
+
+/* line 1624, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.bg-info {
+  background-color: #06b5dd !important;
+  color: #fff;
+}
+
+/* line 1628, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.bg-warning {
+  background-color: #ffc717 !important;
+  color: #fff;
+}
+
+/* line 1632, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.bg-danger {
+  background-color: #fd517d !important;
+  color: #fff;
+}
+
+/* line 1636, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.bg-light {
+  background-color: #f8f5fd !important;
+  color: #fff;
+}
+
+/* line 1640, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.bg-dark {
+  background-color: #2c323f !important;
+  color: #fff;
+}
+
+/* line 1644, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.color-box > div > div {
+  border-radius: 15px;
+}
+
+/* line 1647, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.m-b-10 {
+  margin-bottom: 10px;
+}
+
+/* line 1651, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.btn-light {
+  border: 1px solid #e8ecf4;
+}
+
+/* line 1654, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.font-size-10 {
+  font-size: 10px !important;
+}
+
+/* line 1657, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.text-primary {
+  color: #5664d2 !important;
+}
+
+/* line 1660, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.font-size-14 {
+  font-size: 14px !important;
+}
+
+/* line 1663, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.line-height-2 {
+  line-height: 2;
+}
+
+/* line 1667, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.text_white {
+  color: #fff;
+}
+
+/* line 1670, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.f_w_400 {
+  font-weight: 400;
+}
+
+/* line 1673, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.f_w_700 {
+  font-weight: 700;
+}
+
+/* line 1676, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.f_s_11 {
+  font-size: 11px;
+}
+
+/* line 1679, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.f_s_12 {
+  font-size: 12px;
+}
+
+/* line 1682, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.f_s_13 {
+  font-size: 13px;
+}
+
+/* line 1685, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.f_s_14 {
+  font-size: 14px;
+}
+
+/* line 1688, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.f_s_15 {
+  font-size: 15px;
+}
+
+/* line 1691, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.f_s_16 {
+  font-size: 16px;
+}
+
+/* line 1694, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.f_s_18 {
+  font-size: 18px;
+}
+
+/* line 1697, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.f_s_19 {
+  font-size: 19px;
+}
+
+/* line 1700, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.f_s_20 {
+  font-size: 20px !important;
+}
+
+/* line 1703, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.f_s_17 {
+  font-size: 17px;
+}
+
+/* line 1706, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.f_s_28 {
+  font-size: 28px;
+}
+
+/* line 1709, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.f_s_40 {
+  font-size: 40px;
+}
+
+/* line 1712, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.f_s_60 {
+  font-size: 60px;
+}
+
+/* line 1715, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.ml_25 {
+  margin-left: 25px;
+}
+
+/* line 1718, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.ml_15 {
+  margin-left: 15px;
+}
+
+/* line 1721, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.color_theme {
+  color: #14256A;
+}
+
+/* line 1724, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.color_theme2 {
+  color: #101038;
+}
+
+/* line 1727, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.color_gray {
+  color: #8890B5;
+}
+
+/* line 1730, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.color_gray2 {
+  color: #B1B6C9;
+}
+
+/* line 1734, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.pulse .pulse-ring {
+  display: block;
+  border-radius: 40px;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  -webkit-animation: animation-pulse 3.5s ease-out;
+  animation: animation-pulse 3.5s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  opacity: 0;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #e4e6ef;
+}
+
+/* line 1750, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.pulse .pulse-ring.notification_count_pulse {
+  right: -18px;
+  top: -14px;
+}
+
+/* line 1754, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.pulse.pulse-primary .pulse-ring {
+  border-color: rgba(54, 153, 255, 0.75);
+}
+
+/* line 1757, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.pulse.pulse-secondary .pulse-ring {
+  border-color: rgba(228, 230, 239, 0.75);
+}
+
+/* line 1761, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.pulse.pulse-success .pulse-ring {
+  border-color: rgba(27, 197, 189, 0.75);
+}
+
+/* line 1765, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.pulse.pulse-info .pulse-ring {
+  border-color: rgba(137, 80, 252, 0.75);
+}
+
+/* line 1769, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.pulse.pulse-warning .pulse-ring {
+  border-color: rgba(255, 168, 0, 0.75);
+}
+
+/* line 1773, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.pulse.pulse-danger .pulse-ring {
+  border-color: rgba(246, 78, 96, 0.75);
+}
+
+/* line 1777, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.pulse.pulse-light .pulse-ring {
+  border-color: rgba(243, 246, 249, 0.75);
+}
+
+/* line 1781, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.pulse.pulse-dark .pulse-ring {
+  border-color: rgba(24, 28, 50, 0.75);
+}
+
+/* line 1785, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.pulse.pulse-white .pulse-ring {
+  border-color: rgba(255, 255, 255, 0.75);
+}
+
+/* line 1789, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.pulse.theme_color .pulse-ring {
+  border-color: rgba(255, 255, 255, 0.75);
+}
+
+@-webkit-keyframes animation-pulse {
+  0% {
+    -webkit-transform: scale(0.1, 0.1);
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: scale(0.1, 0.1);
+    opacity: 0;
+  }
+  65% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.2, 1.2);
+    opacity: 0;
+  }
+}
+
+@keyframes animation-pulse {
+  0% {
+    -webkit-transform: scale(0.1, 0.1);
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: scale(0.1, 0.1);
+    opacity: 0;
+  }
+  65% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.2, 1.2);
+    opacity: 0;
+  }
+}
+
+/* line 1832, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.header_more_tool .dropdown .dropdown-toggle::after {
+  display: none !important;
+}
+
+/* line 1835, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.header_more_tool .dropdown span {
+  padding-left: 0px;
+}
+
+/* line 1837, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.header_more_tool .dropdown span i {
+  font-size: 12px;
+  font-weight: 400;
+  display: inline-block;
+  color: #9AA5CE;
+  position: relative;
+  top: -1px;
+  margin-right: 0px;
+}
+
+/* line 1847, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.header_more_tool .dropdown .dropdown-menu {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  top: 5px !important;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(80, 143, 244, 0.2);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(80, 143, 244, 0.2);
+  box-shadow: 0px 0px 20px 0px rgba(80, 143, 244, 0.2);
+}
+
+/* line 1857, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.header_more_tool .dropdown .dropdown-menu a {
+  padding: 8px 15px;
+  font-size: 13px;
+}
+
+/* line 1860, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.header_more_tool .dropdown .dropdown-menu a:hover {
+  color: #59748A;
+}
+
+/* line 1862, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.header_more_tool .dropdown .dropdown-menu a:hover i {
+  color: #59748A;
+}
+
+/* line 1866, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.header_more_tool .dropdown .dropdown-menu a i {
+  font-size: 13px;
+  vertical-align: middle;
+  position: relative;
+  top: -3px;
+  margin-right: 5px;
+}
+
+/* line 1879, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.common_input input {
+  height: 40px;
+  line-height: 40px;
+  background-color: #F5F6FF;
+  border: 0;
+  padding: 10px 25px;
+  color: #8890B5;
+  font-weight: 700;
+  font-size: 14px;
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+}
+
+/* line 1891, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.common_input input::placeholder {
+  color: #7e7172;
+  font-weight: 300;
+  opacity: 1;
+  background: #F5F6FF;
+}
+
+/* line 1901, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.nav-link-notify {
+  position: relative;
+}
+
+/* line 1905, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.nav-link-notify:before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  right: -7px;
+  border-radius: 50%;
+  top: -10px;
+  background-color: #64C5B1;
+  -webkit-animation: notify-pulse 1s infinite;
+}
+
+@-webkit-keyframes notify-pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(100, 197, 177, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+}
+
+@keyframes notify-pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(100, 197, 177, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+}
+
+/* line 1937, G:/admin_project/6 admin/sales/scss/_reset.scss */
+#back-top {
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  cursor: pointer;
+  z-index: 9999999;
+  display: none;
+}
+
+/* line 1944, G:/admin_project/6 admin/sales/scss/_reset.scss */
+#back-top a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  display: block;
+  color: #fff;
+  line-height: 40px;
+  background: #4C6EF8;
+  font-size: 15px;
+  border-radius: 30px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(76, 110, 248, 0.4);
+  -moz-box-shadow: 0px 10px 20px 0px rgba(76, 110, 248, 0.4);
+  box-shadow: 0px 10px 20px 0px rgba(76, 110, 248, 0.4);
+}
+
+/* line 1966, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.img-thumbnail {
+  background-color: #F5F6FF !important;
+  border: 1px solid #F5F6FF !important;
+  border-radius: 20px !important;
+}
+
+/* line 1972, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.default_border_1px {
+  border: 1px solid #E0E2E8;
+  box-shadow: none !important;
+}
+
+/* line 1976, G:/admin_project/6 admin/sales/scss/_reset.scss */
+.shadow_none {
+  box-shadow: none !important;
+}
+
+@media (max-width: 575.98px) {
+  /* line 1982, G:/admin_project/6 admin/sales/scss/_reset.scss */
+  .sm_w_100 {
+    width: 100%;
+  }
+}
+
+/******** base color css ********/
+/* line 2, G:/admin_project/6 admin/sales/scss/_button.scss */
+.btn_1 {
+  background-color: #567AED;
+  border: 1px solid #567AED;
+  color: #fff;
+  display: inline-block;
+  padding: 11px 25px;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 5px;
+  white-space: nowrap;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* line 14, G:/admin_project/6 admin/sales/scss/_button.scss */
+.btn_1 i {
+  font-size: 15px;
+  padding-right: 7px;
+}
+
+/* line 18, G:/admin_project/6 admin/sales/scss/_button.scss */
+.btn_1:hover {
+  color: #fff;
+  background-color: #567AED;
+  box-shadow: 0 3px 11px #508ff4;
+}
+
+/* line 23, G:/admin_project/6 admin/sales/scss/_button.scss */
+.btn_1.light {
+  background-color: rgba(46, 71, 101, 0.1);
+  border: 1px solid transparent;
+  color: #2E4765;
+}
+
+/* line 28, G:/admin_project/6 admin/sales/scss/_button.scss */
+.btn_1.green {
+  background-color: rgba(46, 201, 184, 0.1);
+  border: 1px solid transparent;
+  color: #2EC9B8;
+}
+
+/* line 33, G:/admin_project/6 admin/sales/scss/_button.scss */
+.btn_1.orange_btn {
+  background: #2D1967;
+  font-size: 16px;
+  border: 0;
+  font-weight: 400;
+  padding: 22px 29px;
+}
+
+/* line 39, G:/admin_project/6 admin/sales/scss/_button.scss */
+.btn_1.orange_btn:hover {
+  background: #2D1967;
+  color: #fff;
+}
+
+/* line 44, G:/admin_project/6 admin/sales/scss/_button.scss */
+.btn_1.sm {
+  font-size: 12px;
+  padding: 6px 15px;
+}
+
+/* line 48, G:/admin_project/6 admin/sales/scss/_button.scss */
+.btn_1.big_btn {
+  padding: 11px 36px;
+}
+
+/* line 51, G:/admin_project/6 admin/sales/scss/_button.scss */
+.btn_1.form_big_btn_1 {
+  padding: 16px 62px !important;
+}
+
+@media (max-width: 575.98px) {
+  /* line 51, G:/admin_project/6 admin/sales/scss/_button.scss */
+  .btn_1.form_big_btn_1 {
+    padding: 16px 30px !important;
+  }
+}
+
+/* line 57, G:/admin_project/6 admin/sales/scss/_button.scss */
+.btn_1.big_btn2 {
+  padding: 11px 37px;
+}
+
+/* line 61, G:/admin_project/6 admin/sales/scss/_button.scss */
+.Euro_btn {
+  background-color: #F5F6FF;
+  color: #fff;
+  display: inline-block;
+  padding: 11px 43px;
+  text-transform: capitalize;
+  line-height: 16px;
+  font-size: 23px;
+  font-weight: 700;
+  border-radius: 5px;
+  white-space: nowrap;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #9267FF;
+}
+
+/* line 75, G:/admin_project/6 admin/sales/scss/_button.scss */
+.Euro_btn:hover {
+  background-color: #9267FF;
+  color: #000;
+}
+
+/* line 80, G:/admin_project/6 admin/sales/scss/_button.scss */
+.btn_2 {
+  color: #64C5B1;
+  border: 1px solid #64C5B1;
+  display: inline-block;
+  padding: 11px 23px;
+  text-transform: capitalize;
+  line-height: 16px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 5px;
+  background-color: transparent;
+  white-space: nowrap;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* line 93, G:/admin_project/6 admin/sales/scss/_button.scss */
+.btn_2:hover {
+  background-color: #64C5B1;
+  border: 1px solid #64C5B1;
+  color: #fff;
+}
+
+/* line 99, G:/admin_project/6 admin/sales/scss/_button.scss */
+.btn_3 {
+  color: #14256A;
+  border: 1px solid #e4e8ec;
+  display: inline-block;
+  padding: 11px 27px;
+  text-transform: capitalize;
+  line-height: 16px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 5px;
+  background-color: #fff;
+  white-space: nowrap;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* line 112, G:/admin_project/6 admin/sales/scss/_button.scss */
+.btn_3.border_color_1 {
+  border: 1px solid #eee1e2;
+}
+
+/* line 116, G:/admin_project/6 admin/sales/scss/_button.scss */
+.btn_3:hover {
+  background-color: #2E4765;
+  border: 1px solid #2E4765;
+  color: #fff;
+}
+
+/* line 122, G:/admin_project/6 admin/sales/scss/_button.scss */
+.btn_4 {
+  display: inline-block;
+  border: 1px solid #e4e8ec;
+  border-radius: 5px;
+  color: #7e7172;
+  text-align: center;
+  padding: 9px 15px;
+  line-height: 20px;
+  font-size: 13px;
+  font-weight: 300;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* line 133, G:/admin_project/6 admin/sales/scss/_button.scss */
+.btn_4:hover {
+  background-color: #2E4765;
+  border: 1px solid #2E4765;
+  color: #fff;
+}
+
+/* line 140, G:/admin_project/6 admin/sales/scss/_button.scss */
+.btn_5 {
+  border: 1px solid #fff;
+  display: inline-block;
+  padding: 16px 26px !important;
+  text-transform: capitalize;
+  line-height: 16px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 5px;
+  background-color: #fff;
+  white-space: nowrap;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: #fff !important;
+  text-shadow: none !important;
+  opacity: 1;
+  color: #222222;
+}
+
+/* line 156, G:/admin_project/6 admin/sales/scss/_button.scss */
+.btn_5:hover {
+  background-color: #2E4765 !important;
+  border: 1px solid #2E4765 !important;
+  color: #fff;
+  opacity: 1 !important;
+}
+
+/* line 162, G:/admin_project/6 admin/sales/scss/_button.scss */
+.btn_5.small_btn {
+  padding: 11px 26px !important;
+}
+
+@media (max-width: 575.98px) {
+  /* line 162, G:/admin_project/6 admin/sales/scss/_button.scss */
+  .btn_5.small_btn {
+    padding: 11px 19px !important;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 162, G:/admin_project/6 admin/sales/scss/_button.scss */
+  .btn_5.small_btn {
+    padding: 11px 19px !important;
+  }
+}
+
+/* line 172, G:/admin_project/6 admin/sales/scss/_button.scss */
+.btn_6 {
+  color: #14256A;
+  border: 1px solid #eee1e2;
+  display: inline-block;
+  padding: 11px 25px;
+  text-transform: capitalize;
+  line-height: 16px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 5px;
+  background-color: #fff;
+  white-space: nowrap;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* line 185, G:/admin_project/6 admin/sales/scss/_button.scss */
+.btn_6:hover {
+  background-color: #2E4765;
+  border: 1px solid #2E4765;
+  color: #fff;
+}
+
+/* line 191, G:/admin_project/6 admin/sales/scss/_button.scss */
+.sm_btn {
+  line-height: 15px;
+  background-color: #fff;
+  height: 34px;
+  padding: 9px 20px;
+  color: #212e40;
+  width: 150px;
+  text-transform: capitalize;
+  border: 1px solid #eee1e2;
+}
+
+/* line 201, G:/admin_project/6 admin/sales/scss/_button.scss */
+.view_archive_btn {
+  border: 1px solid #e4e8ec;
+  color: #7e7172;
+  padding: 16px 30px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  line-height: 16px;
+  background-color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* line 211, G:/admin_project/6 admin/sales/scss/_button.scss */
+.view_archive_btn i {
+  margin-right: 15px;
+}
+
+/* line 214, G:/admin_project/6 admin/sales/scss/_button.scss */
+.view_archive_btn:hover {
+  color: #2E4765;
+  border: 1px solid #2E4765;
+}
+
+/* line 220, G:/admin_project/6 admin/sales/scss/_button.scss */
+.white_btn {
+  display: inline-block;
+  color: #7e7172;
+  font-size: 12px;
+  font-weight: 400;
+  background: #fff;
+  transition: .3s;
+  padding: 6px 20px;
+  border-radius: 3px;
+}
+
+/* line 229, G:/admin_project/6 admin/sales/scss/_button.scss */
+.white_btn:hover {
+  background: #2D1967;
+  color: #fff;
+}
+
+/* line 235, G:/admin_project/6 admin/sales/scss/_button.scss */
+.default_btn {
+  display: inline-block;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  background: #2D1967;
+  transition: .3s;
+  padding: 15px 25px;
+  border-radius: 3px;
+}
+
+/* line 244, G:/admin_project/6 admin/sales/scss/_button.scss */
+.default_btn:hover {
+  color: #fff;
+}
+
+/* line 248, G:/admin_project/6 admin/sales/scss/_button.scss */
+.close.white_btn2 {
+  border: 1px solid #fff;
+  display: inline-block;
+  padding: 16px 26px !important;
+  text-transform: capitalize;
+  line-height: 16px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 5px;
+  background-color: #fff;
+  white-space: nowrap;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: #fff !important;
+  text-shadow: none !important;
+  opacity: 1;
+  color: #222222;
+  margin-right: 10px;
+}
+
+/* line 265, G:/admin_project/6 admin/sales/scss/_button.scss */
+.close.white_btn2:hover {
+  background-color: #2E4765 !important;
+  border: 1px solid #2E4765 !important;
+  color: #fff;
+  opacity: 1 !important;
+}
+
+/* line 272, G:/admin_project/6 admin/sales/scss/_button.scss */
+.white_btn3 {
+  border: 1px solid #fff;
+  display: inline-block;
+  padding: 14px 30px !important;
+  text-transform: capitalize;
+  line-height: 16px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 5px;
+  background-color: #fff;
+  white-space: nowrap;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: #fff !important;
+  text-shadow: none !important;
+  opacity: 1;
+  color: #101038;
+  box-shadow: 0 3px 11px rgba(0, 0, 0, 0.17);
+}
+
+/* line 289, G:/admin_project/6 admin/sales/scss/_button.scss */
+.white_btn3:hover {
+  background-color: #567AED !important;
+  border: 1px solid #567AED !important;
+  color: #fff;
+  opacity: 1 !important;
+}
+
+/* line 297, G:/admin_project/6 admin/sales/scss/_button.scss */
+.status_btn {
+  display: inline-block;
+  padding: 2px 15px;
+  font-size: 11px;
+  font-weight: 300;
+  color: #fff !important;
+  background: #05d34e;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  text-transform: capitalize;
+  white-space: nowrap;
+  min-width: 70px;
+  text-align: center;
+}
+
+/* line 309, G:/admin_project/6 admin/sales/scss/_button.scss */
+.status_btn.yellow_btn {
+  background: #ffba00;
+}
+
+/* line 312, G:/admin_project/6 admin/sales/scss/_button.scss */
+.status_btn:hover {
+  color: #fff;
+}
+
+/* line 317, G:/admin_project/6 admin/sales/scss/_button.scss */
+.dropdown .dropdown-toggle.lms_drop_1 {
+  background: #fff;
+  padding: 4px 15px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: capitalize;
+  text-align: left;
+  color: #7e7172;
+  display: inline-block;
+  width: 102px;
+  border: 0;
+  border: 1px solid #eee1e2;
+  position: relative;
+  transition: .3s;
+}
+
+/* line 332, G:/admin_project/6 admin/sales/scss/_button.scss */
+.dropdown .dropdown-toggle.lms_drop_1::after {
+  content: "\f0d7";
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  right: 0;
+  top: 12px;
+  color: #cec1c2;
+  font-size: 12px;
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 14px;
+}
+
+/* line 349, G:/admin_project/6 admin/sales/scss/_button.scss */
+.dropdown .dropdown-toggle.lms_drop_1.lms_drop_2 {
+  min-width: 140px;
+}
+
+/* line 354, G:/admin_project/6 admin/sales/scss/_button.scss */
+.dropdown.show .dropdown-toggle.lms_drop_1 {
+  background: #2D1967;
+  padding: 4px 15px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: capitalize;
+  text-align: left;
+  color: #7e7172;
+  display: inline-block;
+  width: 102px;
+  border: 0;
+  color: #fff;
+  border: 1px solid #2D1967;
+}
+
+/* line 368, G:/admin_project/6 admin/sales/scss/_button.scss */
+.dropdown.show .dropdown-toggle.lms_drop_1::after {
+  content: "\f0d8";
+}
+
+/* line 373, G:/admin_project/6 admin/sales/scss/_button.scss */
+.dropdown .dropdown-menu {
+  border: 0;
+  border: 1px solid #eee1e2;
+  padding: 12px 0 20px 0;
+  margin: 0;
+  border-radius: 0 !important;
+}
+
+/* line 379, G:/admin_project/6 admin/sales/scss/_button.scss */
+.dropdown .dropdown-menu .dropdown-item {
+  font-size: 12px;
+  font-weight: 300;
+  padding: 4px 20px;
+  color: #7f7778;
+}
+
+/* line 384, G:/admin_project/6 admin/sales/scss/_button.scss */
+.dropdown .dropdown-menu .dropdown-item:hover {
+  color: #2D1967;
+  background: transparent;
+}
+
+/* line 389, G:/admin_project/6 admin/sales/scss/_button.scss */
+.dropdown .dropdown-menu.dropdown-menu-w140 {
+  min-width: 140px;
+}
+
+/* line 394, G:/admin_project/6 admin/sales/scss/_button.scss */
+.white_btn_line {
+  white-space: nowrap;
+  height: 50px;
+  background: transparent;
+  margin-left: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: capitalize;
+  border: 0;
+  padding: 0 19px;
+  border-radius: 3px;
+  border: 1px solid #eee1e2;
+  color: #7e7172;
+  transition: .3s;
+}
+
+/* line 408, G:/admin_project/6 admin/sales/scss/_button.scss */
+.white_btn_line i {
+  font-size: 13px;
+  color: #7e7172;
+  margin-right: 6px;
+}
+
+/* line 413, G:/admin_project/6 admin/sales/scss/_button.scss */
+.white_btn_line:hover {
+  background: #2D1967;
+  color: #fff;
+  border: 1px solid #2D1967;
+}
+
+/* line 417, G:/admin_project/6 admin/sales/scss/_button.scss */
+.white_btn_line:hover i {
+  color: #fff;
+  transition: .3s;
+}
+
+/* line 423, G:/admin_project/6 admin/sales/scss/_button.scss */
+.white_btn_line2 {
+  white-space: nowrap;
+  height: 30px;
+  background: transparent;
+  font-size: 12px;
+  font-weight: 300;
+  display: inline-block;
+  text-transform: capitalize;
+  border: 0;
+  border: 1px solid #eee1e2;
+  color: #7e7172;
+  transition: .3s;
+  border-radius: 30px;
+  line-height: 28px;
+  padding: 0 18px;
+}
+
+/* line 438, G:/admin_project/6 admin/sales/scss/_button.scss */
+.white_btn_line2:hover {
+  background: #2D1967;
+  color: #fff !important;
+  border: 1px solid #2D1967;
+}
+
+/* line 442, G:/admin_project/6 admin/sales/scss/_button.scss */
+.white_btn_line2:hover i {
+  color: #fff;
+  transition: .3s;
+}
+
+/* line 448, G:/admin_project/6 admin/sales/scss/_button.scss */
+.theme_text_btn {
+  font-size: 14px;
+  color: #46D293;
+  font-weight: 700;
+}
+
+/* line 452, G:/admin_project/6 admin/sales/scss/_button.scss */
+.theme_text_btn:hover {
+  color: #46D293;
+}
+
+/* line 457, G:/admin_project/6 admin/sales/scss/_button.scss */
+table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > td:first-child::before,
+table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child::before {
+  z-index: 9;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "\e61a";
+  font-family: 'themify';
+  font-size: 8px;
+  line-height: 14px;
+  font-weight: 600;
+  background-color: #fef1f2;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.08), -6px -6px 12px white;
+}
+
+/* line 473, G:/admin_project/6 admin/sales/scss/_button.scss */
+table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child::before,
+table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::before {
+  content: "\e622";
+  box-shadow: inset 6px 6px 12px rgba(0, 0, 0, 0.08), inset -6px -6px 12px white;
+}
+
+/* line 487, G:/admin_project/6 admin/sales/scss/_button.scss */
+.CRM_dropdown.dropdown .dropdown-toggle {
+  background: transparent;
+  color: #415094;
+  font-size: 13px;
+  font-weight: 500;
+  border: 1px solid #7c32ff;
+  border-radius: 32px;
+  padding: 5px 20px;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .3s;
+}
+
+/* line 498, G:/admin_project/6 admin/sales/scss/_button.scss */
+.CRM_dropdown.dropdown .dropdown-toggle:after {
+  content: "\e62a";
+  font-family: "themify";
+  border: none;
+  border-top-color: currentcolor;
+  border-top-style: none;
+  border-top-width: medium;
+  border-top: 0px;
+  font-size: 10px;
+  position: relative;
+  top: 3px;
+  left: 0;
+  font-weight: 600;
+  transition: .3s;
+}
+
+/* line 513, G:/admin_project/6 admin/sales/scss/_button.scss */
+.CRM_dropdown.dropdown .dropdown-toggle:hover, .CRM_dropdown.dropdown .dropdown-toggle:focus {
+  color: #fff;
+  border: 1px solid transparent;
+  box-shadow: none;
+}
+
+/* line 528, G:/admin_project/6 admin/sales/scss/_button.scss */
+.CRM_dropdown.dropdown .dropdown-menu {
+  border-radius: 5px 5px 10px 10px;
+  border: 0px;
+  padding: 15px 0px;
+  box-shadow: 0px 10px 20px rgba(108, 39, 255, 0.3);
+}
+
+/* line 533, G:/admin_project/6 admin/sales/scss/_button.scss */
+.CRM_dropdown.dropdown .dropdown-menu .dropdown-item {
+  color: #828bb2;
+  text-align: right;
+  font-size: 12px;
+  padding: 4px 1.5rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* line 540, G:/admin_project/6 admin/sales/scss/_button.scss */
+.CRM_dropdown.dropdown .dropdown-menu .dropdown-item:hover {
+  color: #2E4765;
+}
+
+/* line 547, G:/admin_project/6 admin/sales/scss/_button.scss */
+.dropdown-menu.option_width_8 {
+  min-width: 150px;
+}
+
+/******** header css here *********/
+/* line 2, G:/admin_project/6 admin/sales/scss/_header.scss */
+.header_iner {
+  background-color: #FFFFFF;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  padding: 30px;
+  position: relative;
+  border-radius: 0px;
+  margin: 0;
+  background: #FFFFFF;
+  border-radius: 0;
+}
+
+/* line 27, G:/admin_project/6 admin/sales/scss/_header.scss */
+.header_iner.default_header {
+  background: #64C5B1;
+  border-radius: 0;
+}
+
+@media (max-width: 575.98px) {
+  /* line 2, G:/admin_project/6 admin/sales/scss/_header.scss */
+  .header_iner {
+    justify-content: flex-end !important;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 2, G:/admin_project/6 admin/sales/scss/_header.scss */
+  .header_iner {
+    justify-content: flex-end !important;
+  }
+}
+
+@media (max-width: 991px) {
+  /* line 2, G:/admin_project/6 admin/sales/scss/_header.scss */
+  .header_iner {
+    padding: 20px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  /* line 2, G:/admin_project/6 admin/sales/scss/_header.scss */
+  .header_iner {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 2, G:/admin_project/6 admin/sales/scss/_header.scss */
+  .header_iner {
+    margin: 0;
+  }
+}
+
+/* line 72, G:/admin_project/6 admin/sales/scss/_header.scss */
+.header_iner .page_tittle h3 {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #222222;
+  margin-bottom: 2px;
+}
+
+@media (max-width: 991px) {
+  /* line 72, G:/admin_project/6 admin/sales/scss/_header.scss */
+  .header_iner .page_tittle h3 {
+    margin-right: 15px;
+  }
+}
+
+/* line 82, G:/admin_project/6 admin/sales/scss/_header.scss */
+.header_iner .page_tittle .page_subtitle {
+  font-size: 12px;
+  font-weight: 300;
+  color: #7e7172;
+  margin-bottom: 0;
+}
+
+/* line 87, G:/admin_project/6 admin/sales/scss/_header.scss */
+.header_iner .page_tittle .page_subtitle .page_subtitle_inenr {
+  color: #7e7172;
+}
+
+/* line 89, G:/admin_project/6 admin/sales/scss/_header.scss */
+.header_iner .page_tittle .page_subtitle .page_subtitle_inenr.active_subcat {
+  color: #fe1724;
+  white-space: nowrap;
+}
+
+/* line 93, G:/admin_project/6 admin/sales/scss/_header.scss */
+.header_iner .page_tittle .page_subtitle .page_subtitle_inenr i {
+  margin-left: 10px;
+  margin-right: 7px;
+  font-size: 12px;
+}
+
+/* line 98, G:/admin_project/6 admin/sales/scss/_header.scss */
+.header_iner .page_tittle .page_subtitle .page_subtitle_inenr svg {
+  position: relative;
+  margin: 0 7px 0 10px;
+  top: -1px;
+}
+
+@media (max-width: 575.98px) {
+  /* line 98, G:/admin_project/6 admin/sales/scss/_header.scss */
+  .header_iner .page_tittle .page_subtitle .page_subtitle_inenr svg {
+    margin: 0 2px 0 2px;
+  }
+}
+
+/* line 110, G:/admin_project/6 admin/sales/scss/_header.scss */
+.header_iner .btn_1 {
+  margin: 0 30px;
+}
+
+@media (max-width: 991px) {
+  /* line 113, G:/admin_project/6 admin/sales/scss/_header.scss */
+  .header_iner .notification {
+    margin: 0 10px;
+  }
+}
+
+/* line 117, G:/admin_project/6 admin/sales/scss/_header.scss */
+.header_iner .notification i {
+  color: #707070;
+  position: relative;
+  font-size: 20px;
+}
+
+/* line 121, G:/admin_project/6 admin/sales/scss/_header.scss */
+.header_iner .notification i:after {
+  position: absolute;
+  content: "";
+  right: -1px;
+  top: 0;
+  height: 9px;
+  width: 9px;
+  background-color: #2E4765;
+  border-radius: 50%;
+}
+
+@media (max-width: 767.98px) {
+  /* line 133, G:/admin_project/6 admin/sales/scss/_header.scss */
+  .header_iner .serach_field-area {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 133, G:/admin_project/6 admin/sales/scss/_header.scss */
+  .header_iner .serach_field-area {
+    width: auto;
+    left: 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 133, G:/admin_project/6 admin/sales/scss/_header.scss */
+  .header_iner .serach_field-area {
+    width: auto;
+    margin-right: 70px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 133, G:/admin_project/6 admin/sales/scss/_header.scss */
+  .header_iner .serach_field-area {
+    width: auto;
+    margin-right: 70px;
+  }
+}
+
+/* line 151, G:/admin_project/6 admin/sales/scss/_header.scss */
+.header_iner .header_right .header_notification_warp {
+  margin-right: 50px;
+  margin-left: 40px;
+}
+
+@media (max-width: 575.98px) {
+  /* line 151, G:/admin_project/6 admin/sales/scss/_header.scss */
+  .header_iner .header_right .header_notification_warp {
+    margin-right: 25px;
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 151, G:/admin_project/6 admin/sales/scss/_header.scss */
+  .header_iner .header_right .header_notification_warp {
+    margin-right: 35px;
+    margin-left: 25px;
+  }
+}
+
+/* line 162, G:/admin_project/6 admin/sales/scss/_header.scss */
+.header_iner .header_right .header_notification_warp li {
+  display: inline-block;
+  position: relative;
+}
+
+
+
+
+/* line 499, G:/admin_project/6 admin/sales/scss/_header.scss */
+table.dataTable {
+  width: 100% !important;
+  margin: 0 auto;
+  clear: both;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+/* line 512, G:/admin_project/6 admin/sales/scss/_header.scss */
+.table td, .table th {
+  padding: .75rem;
+  vertical-align: top;
+  border-top: 0 !important;
+}
+
+/* line 520, G:/admin_project/6 admin/sales/scss/_header.scss */
+#calendar {
+  width: 100%;
+  height: 800px;
+}
+
+/* line 526, G:/admin_project/6 admin/sales/scss/_header.scss */
+.fc-day-grid-event .fc-content {
+  white-space: nowrap;
+  overflow: hidden;
+  height: 25px;
+  line-height: 25px;
+  padding: 0 10px 0 10px;
+  color: #fff;
+  font-size: 12px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+/************ sidebar css here ************/
+/* line 2, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar {
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  padding-bottom: 50px;
+  position: fixed;
+  width: 270px;
+  z-index: 999;
+  overflow: hidden;
+  overflow-y: auto;
+  transition: 0.5s;
+  background: #FFFFFF;
+  box-shadow: 0 12px 30px rgba(80, 143, 244, 0.1);
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 18, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+  .sidebar.hide_vertical_menu {
+    left: -20%;
+  }
+}
+
+@media (min-width: 1201px) {
+  /* line 18, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+  .sidebar.hide_vertical_menu {
+    left: -270px;
+  }
+}
+
+@media (max-width: 991px) {
+  /* line 2, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+  .sidebar {
+    left: -280px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    top: 0;
+    width: 280px;
+    background: #fff;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 2, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+  .sidebar {
+    width: 20%;
+  }
+}
+
+/* line 37, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar .logo {
+  margin: 30px;
+  background: #fff;
+  border-radius: 7px;
+  padding-bottom: 20px;
+}
+
+/* line 43, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar .logo img {
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  /* line 37, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+  .sidebar .logo {
+    padding: 30px;
+  }
+}
+
+/* line 53, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar .single_sidebar_tittle i {
+  font-size: 18px;
+  margin-right: 12px;
+  color: #f8dbdd;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* line 59, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar .single_sidebar_tittle a {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #222222;
+  padding: 10px 25px 10px 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  transition: .3s;
+  position: relative;
+  z-index: 0;
+  border-top: 1px solid transparent;
+  background: transparent;
+}
+
+/* line 74, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar .single_sidebar_tittle a::before {
+  position: absolute;
+  right: 0;
+  background: #2E4765;
+  width: 0px;
+  top: 0;
+  bottom: 0;
+  content: '';
+  opacity: 0;
+  transition: .3s;
+  right: 0px;
+  visibility: hidden;
+}
+
+/* line 88, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar .single_sidebar_tittle a.current_active i {
+  color: #2E4765;
+}
+
+/* line 91, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar .single_sidebar_tittle a.current_active::before {
+  opacity: 1;
+  width: 3px;
+  visibility: visible;
+}
+
+/* line 97, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar .single_sidebar_tittle a:hover::before {
+  opacity: 1;
+  right: 0;
+  visibility: visible;
+  width: 3px;
+}
+
+/* line 103, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar .single_sidebar_tittle a.normal_title {
+  padding: 28px 25px 18px 40px;
+  background: #fff7f8;
+  border-top: 1px solid #eee1e2;
+}
+
+/* line 107, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar .single_sidebar_tittle a.normal_title:after {
+  position: absolute;
+  right: 40px;
+  top: 55%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  content: "\f0d8";
+  font-family: "Font Awesome 5 Free";
+  color: #cec1c2;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* line 118, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar .single_sidebar_tittle a.normal_title.collapsed {
+  padding: 10px 25px 10px 40px;
+  background: #fff;
+  border-top: 1px solid transparent;
+}
+
+/* line 122, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar .single_sidebar_tittle a.normal_title.collapsed:after {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "\f0d7";
+  font-family: "Font Awesome 5 Free";
+  color: #cec1c2;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* line 136, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar .single_sidebar_tittle:hover {
+  background-color: #192434;
+}
+
+/* line 138, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar .single_sidebar_tittle:hover i {
+  color: #2E4765;
+}
+
+/* line 143, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar .single_menu_item {
+  padding-left: 36px;
+  margin: 6px 0;
+  line-height: 21px;
+}
+
+/* line 147, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar .single_menu_item:hover {
+  padding-left: 55px !important;
+}
+
+/* line 153, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar .sidebar_iner ul li {
+  list-style: none;
+}
+
+/* line 155, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar .sidebar_iner ul li .submenu {
+  background: #fff7f8;
+  padding: 0px 0px 0px 70px !important;
+  border-bottom: 1px solid #eee1e2;
+}
+
+/* line 160, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar .sidebar_iner ul li .submenu li a {
+  font-size: 13px;
+  line-height: 36px;
+  color: #7e7172;
+  font-weight: 400;
+}
+
+/* line 166, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar .sidebar_iner ul li .submenu li:last-child {
+  padding-bottom: 18px;
+}
+
+@media (max-width: 991px) {
+  /* line 179, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+  .active_sidebar {
+    left: 0;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* line 184, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar_close_icon i {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  position: absolute;
+  right: 30px;
+  font-size: 25px;
+  top: 29px;
+  cursor: pointer;
+  color: #222222;
+}
+
+/* line 199, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar_widget .white_box {
+  padding: 30px;
+}
+
+@media (max-width: 991px) {
+  /* line 199, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+  .sidebar_widget .white_box {
+    padding: 25px 15px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
+  /* line 199, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+  .sidebar_widget .white_box {
+    padding: 15px;
+  }
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 1679px) {
+  /* line 199, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+  .sidebar_widget .white_box {
+    padding: 25px 15px;
+  }
+}
+
+/* line 210, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar_widget .white_box .btn_2 {
+  margin-top: 25px;
+  width: 100%;
+  text-align: center;
+  padding: 16px 25px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 210, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+  .sidebar_widget .white_box .btn_2 {
+    padding: 12px 7px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
+  /* line 219, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+  .sidebar_widget .white_box .btn_1 {
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+}
+
+/* line 226, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar_widget .date_range {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 6px 0 18px;
+}
+
+/* line 231, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar_widget .date_range .btn_3 {
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+/* line 236, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar_widget .date_range i {
+  display: none;
+}
+
+/* line 239, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar_widget .date_range .start_date, .sidebar_widget .date_range .end_date {
+  width: 115px;
+}
+
+/* line 241, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar_widget .date_range .start_date input, .sidebar_widget .date_range .end_date input {
+  width: 100%;
+  border: 1px solid #e4e8ec;
+  color: #7e7172;
+  font-size: 13px;
+  padding: 11px 20px;
+  border-radius: 5px;
+  font-weight: 300;
+}
+
+/* line 250, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar_widget .date_range .start_date ::placeholder, .sidebar_widget .date_range .end_date ::placeholder {
+  color: #7e7172;
+}
+
+/************ sidebar css end ************/
+/* line 261, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar #sidebar_menu > li {
+  margin-left: 0px;
+  margin-right: 20px;
+}
+
+/* line 265, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar #sidebar_menu > li a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #144339;
+  padding: 0px 25px 0px 0px;
+  margin-left: 30px;
+  background: #fff;
+  transition: .3s;
+  position: relative;
+  z-index: 0;
+  display: grid;
+  grid-template-columns: 34px auto;
+  grid-gap: 15px;
+  align-items: center;
+  position: relative;
+  background: transparent;
+  color: #8890B5;
+  margin-top: 25px;
+  font-family: "Comfortaa", cursive;
+}
+
+/* line 284, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar #sidebar_menu > li a.active {
+  color: #64C5B1;
+}
+
+/* line 287, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar #sidebar_menu > li a::after {
+  color: #fff;
+  transform: rotate(-90deg) translate(0, -50%);
+  opacity: 1;
+  font-size: 10px;
+  right: 15px;
+  color: #A1A4B9;
+}
+
+/* line 311, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar #sidebar_menu > li a i {
+  font-size: 15px;
+  margin-right: 12px;
+  color: #A5ADC6;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* line 324, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar #sidebar_menu > li a:hover::before {
+  width: 6px;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* line 332, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar #sidebar_menu > li > a {
+  color: #144339;
+}
+
+/* line 337, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar #sidebar_menu > li.mm-active > a {
+  background: #fff;
+  border-radius: 30px;
+  color: #144339;
+  border-radius: 4px 4px 0 0;
+  background: transparent;
+}
+
+/* line 343, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar #sidebar_menu > li.mm-active > a::after {
+  color: #8890B5;
+  transform: rotate(0deg) translate(0, -50%);
+  opacity: 1;
+  font-size: 10px;
+  right: 15px;
+}
+
+/* line 352, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar #sidebar_menu > li.mm-active.metis_dropmenu > a {
+  padding-top: 29px;
+  padding-bottom: 30px;
+  color: #A5ADC6;
+}
+
+/* line 359, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar #sidebar_menu > li.mm-active > a i {
+  color: #A5ADC6;
+}
+
+/* line 362, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar #sidebar_menu > li.mm-active > a::before {
+  opacity: 1;
+  width: 6px;
+  visibility: visible;
+}
+
+/* line 369, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar #sidebar_menu > li ul {
+  padding: 0px 0px 5px 40px;
+  background: transparent;
+  border-radius: 0 0 4px 4px;
+  margin-left: 30px;
+}
+
+/* line 381, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar #sidebar_menu > li ul li:last-child a {
+  padding-bottom: 30px;
+}
+
+/* line 385, G:/admin_project/6 admin/sales/scss/_sidebar.scss */
+.sidebar #sidebar_menu > li ul li a {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0;
+  white-space: nowrap;
+  padding: 0;
+  padding: 10px 0 10px 8px !important;
+  margin-top: 0;
+  margin-left: 0;
+}

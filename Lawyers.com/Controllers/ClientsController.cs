@@ -76,9 +76,6 @@ namespace lawyers.Controllers
             Session.Abandon();
             return RedirectToAction("Index", "Home");
         }
-        public ActionResult lawyersPage()
-        {
-            return View();
-        }
+        
     }
 }

@@ -11,13 +11,28 @@ namespace Lawyers.com.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Admin
-    {
+    {   [Key]
         public int id { get; set; }
+        [Required]
+        [Display(Name ="Full Name")]
         public string Full_Name { get; set; }
+        [DataType(DataType.EmailAddress)]
+        [Required]
+        [RegularExpression(@"^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$", ErrorMessage = "Email is not valid.")]
         public string Email { get; set; }
+        [Required]
+        [Display(Name ="User Name")]
         public string username { get; set; }
+        [Required]
+        [DataType(DataType.Password)]
         public string Password { get; set; }
+        [Required]
+        [Display(Name = "ConfirmPassword")]
+        [DataType(DataType.Password)]
+        [Compare("Password",ErrorMessage = "Password and ConfirmPassword ")]
+        public string ConfirmPassword { get; set; }
     }
 }

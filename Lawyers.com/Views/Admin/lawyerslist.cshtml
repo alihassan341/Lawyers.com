@@ -1,0 +1,90 @@
+﻿@model IEnumerable<Lawyers.com.Models.lawyer>
+@{
+   
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>lawyerslist</title>
+
+    <style>
+        th {
+            padding: 20px
+        }
+
+        h1 {
+            text-align: center;
+            color: #c18e3c;
+            width: 80%;
+            padding: 5px;
+            margin-left: 10%;
+            margin-bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    @*<p>
+            @Html.ActionLink("Create New", "Create")
+        </p>*@
+    <H1>LATEST LAWYERS</H1>
+    <table style="padding:20px;margin-left:25%;">
+        @*<div class="form-group" style="padding:30px;">
+                <div class="col-md-6" style="margin-left:40%;margin-right:-30%;">
+                    @Html.TextBox("searchTxt", null, new { @class = "form-control", @placeholder = "Serach by Name", @Style = "max-width:30%" })
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-" type="submit">Search</button>
+                </div>
+            </div>*@
+        <tr style="background: #c18e3c;color:white">
+            <th>
+                Lawyer Name
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Number)
+            </th>
+            @*<th>
+                    @Html.DisplayNameFor(model => model.Password)
+                </th>
+                <th></th>*@
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr style="border: 1px solid;padding:10px;text-align:center">
+                <td style="border: 1px solid;padding:10px">
+                    @Html.DisplayFor(modelItem => item.First_Name)
+                    @Html.DisplayFor(modelItem => item.Last_Name)
+
+                <td style="border: 1px solid;padding:10px">
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td style="border: 1px solid;padding:10px">
+                    @Html.DisplayFor(modelItem => item.Address)
+                </td>
+                <td style="border: 1px solid;padding:10px">
+                    @Html.DisplayFor(modelItem => item.Number)
+                </td>
+                @*<td style="border: 1px solid;padding:10px">
+                        @Html.DisplayFor(modelItem => item.Password)
+                    </td>*@
+                @*<td>
+                        @Html.ActionLink("Edit", "Edit", new { id=item.Lid }) |
+                        @Html.ActionLink("Details", "Details", new { id=item.Lid }) |
+                        @Html.ActionLink("Delete", "Delete", new { id=item.Lid })
+                    </td>*@
+            </tr>
+        }
+
+    </table>
+</body>
+</html>

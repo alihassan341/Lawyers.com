@@ -76,7 +76,7 @@ namespace lawyers.Controllers
                 return View();
             }
         }
-         
-        }
        
     }
+       
+}

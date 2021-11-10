@@ -33,42 +33,31 @@ namespace Lawyers.com.Controllers
         {
             if (ModelState.IsValid == true)
             {
-                a.Status = "pending";
+                a.Status = "Pending";
                 db.Appointments.Add(a);
                 int x = db.SaveChanges();
-                if (x > 0)
-                {
-                    TempData["Appoinmentmsg"] = "<script>alert('your Appointment is Book')</script>";
-                }
-                else
-                {
-                    TempData["InsertMsg"] = "<script>alert('Something Went Wrong')</script>";
-                }
+                ModelState.Clear();
+                return RedirectToAction("ClientProfile","client");
             }
-            ViewBag.Cid = new SelectList(db.clients, "Cid", "First_Name", a.Cid);
-            ViewBag.Lid = new SelectList(db.lawyers, "Lid", "First_Name", a.Lid);
-            return View();
+                ViewBag.Cid = new SelectList(db.clients, "Cid", "First_Name", a.Cid);
+                ViewBag.Lid = new SelectList(db.lawyers, "Lid", "First_Name", a.Lid);
+        
+              return View();
+                      
         }
 
         public ActionResult AppList()
         {
+           if(Session["Lid"] == null)
+           {
+              return RedirectToAction("login","lawyer");
+           }
+
             var show = db.Appointments.ToList();
 
             return View(show);
-        }  
-        //[HttpPost]
-        //public ActionResult AppList([Bind(Include = "id,Name,Email,Phone,Date,Issue,Status,Lid,Cid")] int id, string abs)
-        //{
-        //    Appointment appointment = db.Appointments.Find(id);
+        }
 
-        //    db.Entry(appointment).State = EntityState.Modified;
-        //    db.SaveChanges();
-        //    var show = db.Appointments.ToList();
-
-        //    return View(show);
-        //}
-
-       
         public ActionResult Delete(int id)
         {
             var D = db.Appointments.Where(x => x.id == id).First();
@@ -79,17 +68,16 @@ namespace Lawyers.com.Controllers
             return View("AppList", list);
         }
 
-        public ActionResult Edit([Bind(Include = "id,Name,Email,Phone,Date,Issue,Status,Lid,Cid")] int id)
-        {
-            if (id > 0)
-            {
-                Appointment appointment = db.Appointments.Find(id);
-
-                db.Entry(appointment).State = EntityState.Modified;
-                db.SaveChanges();
+        public ActionResult Edit(int id)
+        {     
+            var E = db.Appointments.Where(x => x.id == id).First();
+            E.Status = "Approved";
+            
+            db.SaveChanges();
+            var list = db.Appointments.ToList();
+            return View("AppList",list);
             }
-            return View();
-        }
+            
+      }
 
-    }
 }

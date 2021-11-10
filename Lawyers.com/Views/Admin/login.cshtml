@@ -1,0 +1,60 @@
+﻿@model Lawyers.com.Models.Admin
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>login</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />    
+</head>
+<body>
+    <div style="width: 350px; height: 400px; margin: 5% 35%; background-color: #c18e3c;border-radius:20px;">
+
+        <h2 style="padding:20px 23%;color:#ffffff">Admin LOGIN</h2>
+
+        <div style="margin-top:1%;margin-left:15%;font-size:16px;">
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-horizontal">
+                   
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.username, htmlAttributes: new { @class = "control-label col-md-2" })<br /><br /><br />
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.username, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.username, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })<br /><br />
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" value="Login" class="btn btn-default" />
+                        </div>
+                    </div>
+                </div>
+            }
+
+
+        </div>
+    </div>
+           @*<div>
+                    @Html.ActionLink("Back to List", "Index")
+                </div>*@
+</body>
+</html>

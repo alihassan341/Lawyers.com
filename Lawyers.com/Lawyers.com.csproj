@@ -129,7 +129,6 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AdminController.cs" />
-    <Compile Include="Controllers\Appointments1Controller.cs" />
     <Compile Include="Controllers\AppointmentsController.cs" />
     <Compile Include="Controllers\ClientsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -175,10 +174,13 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\ok.css" />
+    <Content Include="Content\css\style.css" />
     <Content Include="Content\css\font-awesome.min.css" />
     <Content Include="Content\css\ionicons.min.css" />
-    <Content Include="Content\css\Style.css" />
+    <Content Include="Content\css\metisMenu.css" />
     <Content Include="Content\fonts\flaticon\font\Flaticon.svg" />
+    <Content Include="Content\css\themify-icons.css" />
     <Content Include="Content\images\bg_3.jpg" />
     <Content Include="Content\images\bg_5.jpg" />
     <Content Include="Content\images\case-1.jpg" />
@@ -253,6 +255,7 @@
     <Content Include="Content\fonts\flaticon\font\Flaticon.woff" />
     <Content Include="Content\fonts\flaticon\font\Flaticond41d.eot" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\custom.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
@@ -262,7 +265,9 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\metisMenu.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\popper.min.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -277,24 +282,27 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Lawyer\Register.cshtml" />
     <Content Include="Views\Lawyer\login.cshtml" />
-    <Content Include="Views\Lawyer\LawyerProfile.cshtml" />
+    <Content Include="Views\Home\Lawyers.cshtml" />
     <Content Include="Views\Client\Register.cshtml" />
     <Content Include="Views\Client\Login.cshtml" />
     <Content Include="Views\Client\ClientProfile.cshtml" />
     <Content Include="Views\Home\News.cshtml" />
-    <Content Include="Views\Client\lawyersPage.cshtml" />
     <Content Include="Views\Appointments\Appointment.cshtml" />
-    <Content Include="Views\Appointments\Delete.cshtml" />
-    <Content Include="Views\Appointments\Edit.cshtml" />
-    <Content Include="Views\Appointments1\Index.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Appointments\AppList.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Admin\Register.cshtml" />
+    <Content Include="Views\Admin\login.cshtml" />
+    <Content Include="Views\Admin\lawyerslist.cshtml" />
+    <Content Include="Views\Admin\clientslist.cshtml" />
+    <Content Include="Views\Lawyer\LawyerProfile.cshtml" />
+    <Content Include="Views\Profile\Index.cshtml" />
+    <Content Include="Views\Shared\_AdminLayout.cshtml" />
+    <Content Include="Views\Admin\AppList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Admin\" />
-    <Folder Include="Views\Profile\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

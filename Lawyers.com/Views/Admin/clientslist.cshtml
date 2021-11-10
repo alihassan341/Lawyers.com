@@ -1,0 +1,84 @@
+﻿@model IEnumerable<Lawyers.com.Models.client>
+
+@{
+    ViewBag.Title = "clientslist";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>clientslist</title>
+    <style>
+        th {
+            padding: 20px
+        }
+
+        h1 {
+            text-align: center;
+            color: #c18e3c;
+            width: 80%;
+            padding: 5px;
+            margin-left: 10%;
+            margin-bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    @*<p>
+            @Html.ActionLink("Create New", "Create")
+        </p>*@
+    <H1>LATEST CLIENTS</H1>
+    <table style="padding:20px;margin-left:25%;">
+        <tr style="background: #c18e3c;color:white">
+            <th>
+                Client Name
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Number)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Addess)
+            </th>
+            @*<th>
+                    @Html.DisplayNameFor(model => model.Password)
+                </th>
+                <th></th>*@
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr style="border: 1px solid;padding:10px;text-align:center">
+                <td style="border: 1px solid;padding:10px">
+                    @Html.DisplayFor(modelItem => item.First_Name)
+                    @Html.DisplayFor(modelItem => item.Last_Name)
+                </td>
+                <td style="border: 1px solid;padding:10px">
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td style="border: 1px solid;padding:10px">
+                    @Html.DisplayFor(modelItem => item.Number)
+                </td>
+                <td style="border: 1px solid;padding:10px">
+                    @Html.DisplayFor(modelItem => item.Addess)
+                </td>
+                @*<td>
+                        @Html.DisplayFor(modelItem => item.Password)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id=item.Cid }) |
+                        @Html.ActionLink("Details", "Details", new { id=item.Cid }) |
+                        @Html.ActionLink("Delete", "Delete", new { id=item.Cid })
+                    </td>*@
+            </tr>
+        }
+
+    </table>
+</body>
+</html>
